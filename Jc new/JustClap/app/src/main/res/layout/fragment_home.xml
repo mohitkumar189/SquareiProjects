@@ -1,0 +1,348 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.justclap.fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/header" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_150"
+                android:layout_below="@+id/linear"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp5" />
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recycler_banner"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_popular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10" />
+
+                <View
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/hintcolor" />
+
+                <TextView
+                    android:id="@+id/all_services"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/dp15"
+                    android:text="@string/all_services"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear1">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/blue_line_color"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_explore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/view"
+                    android:background="@drawable/explore_btn"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="@dimen/dp10"
+                    android:text=""
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/rl_trending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl1"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_trending_services"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/btn_viewall_trending"
+                    android:layout_alignTop="@+id/btn_viewall_trending"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp10"
+                    android:text="@string/trending_services"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/text_size_15"
+                    android:textStyle="bold" />
+
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:alpha="0.3"
+                    android:background="@color/hintcolor" />
+
+                <TextView
+                    android:id="@+id/text_trending_services1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp10"
+                    android:text="@string/trending_services"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/text_size_15" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_trending_services1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5" />
+
+                <TextView
+                    android:id="@+id/text_trending_services2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp10"
+                    android:text="@string/trending_services"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/text_size_15" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_trending_services2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_trending_services"
+                    android:layout_marginTop="@dimen/dp5" />
+
+                <TextView
+                    android:id="@+id/text_trending_services3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp10"
+                    android:text="@string/trending_services"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/text_size_15" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_trending_services3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_trending_services"
+                    android:layout_marginTop="@dimen/dp5" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_used"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_trending"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                android:padding="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/text_used_services"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/used_services"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/text_size_15" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/text_used_services"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@color/hintcolor" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_used_services"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view2"
+                    android:layout_marginTop="@dimen/dp5" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_reward"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_used"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_reward_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp10"
+                    android:text="@string/reward_points"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/text_size_15"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view11"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:alpha="0.3"
+                    android:background="@color/hintcolor" />
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/dp5"
+                    android:src="@drawable/speed" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_refer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_reward"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:src="@drawable/wts_img" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_refer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="@dimen/dp10"
+                        android:text="Refer &amp; Earn"
+                        android:textColor="@color/textcolordark"
+                        android:textSize="@dimen/text_size_14"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/view21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_alignLeft="@+id/text_refer"
+                        android:layout_alignRight="@+id/text_refer"
+                        android:layout_below="@+id/text_refer"
+                        android:background="@color/hintcolor" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_refer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:padding="@dimen/dp3"
+                    android:text="Refer through whatsapp."
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/text_size_11" />
+
+                <TextView
+                    android:id="@+id/text_refer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="@dimen/dp3"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingRight="@dimen/dp10"
+                    android:paddingTop="@dimen/dp3"
+                    android:text="3 Successful installation and login will credit money in your wallet"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/text_size_11" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/btn_refer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refer &amp; Earn"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp10"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size_13"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/btn_bg" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

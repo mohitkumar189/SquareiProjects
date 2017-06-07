@@ -1,0 +1,198 @@
+<resources>
+    <string name="app_name">JustClap</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="action_list">List view</string>
+    <string name="action_grid">Grid view</string>
+    <string name="action_suffle">Suffle view</string>
+    <string name="terms">I agree to your <u>terms and conditions</u> and <u>Privacy policy</u></string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="signin">SIGN IN</string>
+    <string name="vendor_login"><u>Vendor Login</u></string>
+    <string name="signup">SIGN UP</string>
+    <string name="txt_submit">Submit</string>
+    <string name="create_account">New account? Sign up.</string>
+    <string name="title_activity_signup">Signup</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email_address">Email</string>
+    <string name="name">Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="contact_no">Mobile</string>
+    <string name="business_name">Business Name</string>
+    <string name="optional_info">OPTIONAL INFORMATION</string>
+    <string name="facebook_link">Facebook Link</string>
+    <string name="website_url">Website URL</string>
+    <string name="gender">Gender</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="mobileno_Length">Mobile no should be at least 10 digit.</string>
+    <string name="enter_confirmPassword">Please enter password again.</string>
+    <string name="enterwebsite_url">Please enter your website URL</string>
+    <string name="facebook_url">Please enter your facebook URL</string>
+    <string name="enter_business_desc">Please enter your business Description.</string>
+    <string name="matchPassword">Password should not match.</string>
+    <string name="enterFirstName">Please enter your name.</string>
+    <string name="enterLastName">Please enter your lastname.</string>
+    <string name="enterMobileno">Please enter your mobile number.</string>
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+    <string name="passwordLength">Password should be at least 6 digit.</string>
+    <string name="validEmail">Please enter valid email address.</string>
+    <string name="enterEmail">Please enter email address.</string>
+    <string name="enterPassword">Please enter password.</string>
+    <string name="entergender">Please select your gender.</string>
+    <string name="enter_business">Please enter your business name.</string>
+    <string name="text_need_job">WHEN YOU NEED JOB ?</string>
+    <string name="text_get_listed">HOW TO GET LISTED?</string>
+    <string name="text_cash_back">CASH BACK ON RATING THE SERVICE ?</string>
+    <string name="text_sector_job">WHICH SECTOR YOU NEED JOB ?</string>
+    <string name="text_get_job">GET JOB WITHIN..</string>
+    <string name="text_location">WHERE ARE YOU LOCATED ?</string>
+    <string name="text_home">Just Clap delivers  new Customers to you on this app.</string>
+    <string name="login_account">Already have an account? Login.</string>
+    <string name="title_activity_vendor_sign_up">VendorSignUp</string>
+    <string name="title_activity_login_home">LoginHome</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="title_activity_details_of_job">DetailsOfJob</string>
+    <string name="title_activity_all_services">AllServices</string>
+    <string name="title_activity_dash_board">DashBoardActivity</string>
+    <string name="title_activity_servive_category">ServiveCategory</string>
+    <string name="title_activity_booking_step1">Submit Questions</string>
+    <string name="title_activity_home_services">HomeServices</string>
+    <string name="textpager_submitreq">Submit request</string>
+    <string name="textpager_getquote">2.Get quotes</string>
+    <string name="textpager_relevantcust">1.Find new jobs</string>
+    <string name="textpager_relevantcustdesc">Customer are looking experienced professionals</string>
+    <string name="textpager_income">2.Extend your income</string>
+    <string name="textpager_incomedesc">Connect with customers and extend \n income</string>
+
+    <string name="textpager_getquotedesc">You will get responses very soon</string>
+
+    <string name="textpager_hirebest">3.Hire the best</string>
+
+    <string name="textpager_hirebestdesc">Hire convenient professional</string>
+    <string name="textpager_submitreqdesc">The simplest way to find the right \n professional for service</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_business_detail">BusinessDetail</string>
+    <string name="title_activity_hire_professionals">HireProfessionals</string>
+    <string name="title_activity_service_sub_menu">ServiceSubMenu</string>
+    <string name="title_activity_activity__request_status">Activity_RequestStatus</string>
+    <string name="message_network_problem">Please check your internet connectivity.</string>
+
+    <string name="message_network_issue">Something went wrong, Please check your internet connectivity.</string>
+    <string name="img_url">http://www.justclapindia.com/</string>
+    <string name="terms_condition">http://www.justclapindia.com/admin/terms_cond</string>
+    <string name="privacy_policy">http://www.justclapindia.com/admin/privacy_policy</string>
+
+    <!-- <string name="url_base_new">http://dev.logiguyz.com/justclap/api/</string>-->
+    <string name="url_base_new">http://www.justclapindia.com/api/</string>
+    <string name="homeData">homeData</string>
+    <string name="getVendorDetails">getVendorDetails</string>
+    <string name="updateVendorPortfolio">updateVendorPortfolio</string>
+    <string name="updateVendorCertificate">updateVendorCertificate</string>
+    <string name="vendorSignupData">vendorSignupData</string>
+    <string name="deleteVendorPortfolio">deleteVendorPortfolio</string>
+    <string name="getCustomerResponseQustions">getCustomerResponseQustions</string>
+    <string name="rechargeVendorWallet">rechargeVendorWallet</string>
+    <string name="getUserNaukri">getUserNaukri</string>
+    <string name="loginSocialUser">loginSocialUser</string>
+    <string name="getVendorsOfBidirectional">getVendorsOfBidirectional</string>
+    <string name="syncMessages">syncMessages</string>
+    <string name="sendMessages">sendMessages</string>
+    <string name="getUserContacts">getUserContacts</string>
+
+    <string name="vendorResponseToCustomer">vendorResponseToCustomer</string>
+    <string name="getVendorQuoteList">getVendorQuoteList</string>
+    <string name="hireVendor">hireVendor</string>
+    <string name="getCustomerOngoingServices">getCustomerOngoingServices</string>
+    <string name="chatList">chatList</string>
+    <string name="ongoingLeadsOfVendor">ongoingLeadsOfVendor</string>
+    <string name="completedLeadsOfVendor">completedLeadsOfVendor</string>
+    <string name="applyFromCustomer">applyFromCustomer</string>
+    <string name="getVendorQuoteListBiDirectional">getVendorQuoteListBiDirectional</string>
+    <string name="cancelBiDirectionalOfVendor">cancelBiDirectionalOfVendor</string>
+    <string name="saveApplyCustomerBiDi">saveApplyCustomerBiDi</string>
+
+    <string name="updateVendorProfilePhoto">updateVendorProfilePhoto</string>
+    <string name="vendorDetailPage">vendorDetailPage</string>
+    <string name="getCustomersResponse">getCustomersResponse</string>
+    <string name="getVendorsQuotes">getVendorsQuotes</string>
+    <string name="hireVendorDetailPage">hireVendorDetailPage</string>
+    <string name="getTermsCond">getTermsCond</string>
+    <string name="deleteCustomerService">deleteCustomerService</string>
+    <string name="changePassword">changePassword</string>
+    <string name="updateVendorCoverPhoto">updateVendorCoverPhoto</string>
+    <string name="chatData">chatData</string>
+    <string name="getWalletDetails">getWalletDetails</string>
+    <string name="getNewLeadsCustomer">getNewLeadsCustomer</string>
+    <string name="getCustomerCompletedServices">getCustomerCompletedServices</string>
+
+    <string name="facebook_app_id">1045934982120165</string>
+    <string name="loginServiceProvider">loginServiceProvider</string>
+    <string name="signUpUser">signUpUser</string>
+    <string name="loginUser">loginUser</string>
+    <string name="signUpServiceProvider">signUpServiceProvider</string>
+    <string name="submitServiceQueries">submitServiceQueries</string>
+    <string name="getNewLeads">getNewLeads</string>
+    <string name="updateVendorPersonalDetails">updateVendorPersonalDetails</string>
+    <string name="updateVendorBussinessDetails">updateVendorBussinessDetails</string>
+    <string name="setReview">setReview</string>
+    <string name="deleteRequestFromVendor">deleteRequestFromVendor</string>
+    <string name="getAllCustomerRequestRelatedToVendor">getAllCustomerRequestRelatedToVendor</string>
+    <string name="getCustomerCancelServices">getCustomerCancelServices</string>
+    <string name="forgotPasswordVendor">forgotPasswordVendor</string>
+    <string name="getServiceDetails">getServiceDetails</string>
+    <string name="vendorAcceptUserApplyJob">vendorAcceptUserApplyJob</string>
+    <string name="logout">logout</string>
+    <string name="getCustomerProfile">getCustomerProfile</string>
+    <string name="notificationsList">notificationsList</string>
+    <string name="setReviewBidirectional">setReviewBidirectional</string>
+    <string name="resendOTP">resendOTP</string>
+    <string name="verifyOTP">verifyOTP</string>
+
+    <string name="sendMessage">sendMessage</string>
+    <string name="listMassages">listMessages</string>
+
+    <string name="recharge_message">Please recharge your wallet, you have insufficient amount.</string>
+
+    <string name="title_feedbackdesc">Thanks for sharing your feedback. It means the world to us.</string>
+    <string name="title_activity_gif_views">GifViews</string>
+    <string name="title_activity_search">Search Service</string>
+    <string name="title_activity_question_page">QuestionPage</string>
+    <string name="font_fontFamily_medium">sans-serif</string>
+    <string name="message_problem">Opps! Something went wrong, please try again.</string>
+
+    <string name="problem_server">Problem connecting to server, Please try later.</string>
+    <!--For gcm-->
+
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+    <string name="title_activity_terms_andconditions">TermsAndconditions</string>
+    <string name="title_activity_chatpage">Chatpage</string>
+    <string name="title_activity_view_detail_answers">ViewDetailAnswers</string>
+    <string name="title_activity_booking_history">Booking History</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+    <string name="title_activity_sharing_dataon_facebook">SharingDataonFacebook</string>
+    <string name="title_activity_activity_home">ActivityHome</string>
+    <string name="title_activity_share_ride_map_view">ShareRideMapView</string>
+    <string name="title_activity_sharedata_linkedin">SharedataLinkedin</string>
+
+
+</resources>

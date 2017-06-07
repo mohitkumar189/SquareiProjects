@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_credits"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textbox_height"
+                android:background="#EAE5E5"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp10"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingRight="@dimen/dp10"
+                android:paddingTop="@dimen/dp10"
+                android:singleLine="true"
+                android:text="You have 0 credits left. Please recharge."
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_16"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_credits"
+                android:layout_margin="@dimen/dp10"
+                android:background="@color/text_white"
+                android:padding="@dimen/dp10"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/text_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/textbox_heightsmall"
+                    android:drawableRight="@drawable/down_arrow"
+                    android:gravity="center"
+                    android:text="Show Filter"
+                    android:textSize="@dimen/text_size_16"
+                    android:visibility="gone" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_show_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <Spinner
+                            android:id="@+id/spinner_filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+
+                        <Spinner
+                            android:id="@+id/spinner_sort"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:id="@+id/image_hidefilter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:padding="@dimen/dp10"
+                            android:src="@drawable/up_arrow" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/text_submit"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/ll1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/dp10"
+                        android:background="@color/txt_orange"
+                        android:gravity="center"
+                        android:padding="@dimen/dp5"
+                        android:text="Submit"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_size_16" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header_layout"
+            android:layout_marginTop="@dimen/dp5">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_empty_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dp10"
+                android:src="@drawable/leads_icon" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/dp5"
+                android:text="NO NEW LEADS FOUND"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_headre"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/dp5"
+                android:text="You don't have any booking in progress."
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_17" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include layout="@layout/network_issue_layout" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

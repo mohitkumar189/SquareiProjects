@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/text_white"
+                app:tabIndicatorHeight="2dp"
+                app:tabMode="scrollable" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:id="@+id/header_layout"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+
+            <RelativeLayout
+                android:id="@+id/rl_main"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/top_layout"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/profile_bg"
+                    android:clickable="true"
+                    android:paddingBottom="@dimen/dp10">
+
+                    <ImageView
+                        android:id="@+id/image_user"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:padding="@dimen/dp5" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:layout_toRightOf="@+id/image_user">
+
+                        <TextView
+                            android:id="@+id/text_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Logiguyz"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/text_size_sub_headre" />
+
+                        <TextView
+                            android:id="@+id/text_useremail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_below="@+id/text_username"
+                            android:layout_marginTop="@dimen/dp2"
+                            android:text="Logiguyz@gmail.com"
+                            android:textColor="@color/text_white"
+
+                            android:textSize="@dimen/text_size" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/top_layout"
+                    android:background="@color/text_white"
+                    android:scrollbars="none">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_white"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_login"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp8">
+
+                            <ImageView
+                                android:id="@+id/image_login"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/dp5"
+                                android:src="@drawable/login_signup" />
+
+                            <TextView
+                                android:id="@+id/text_login"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dp15"
+                                android:layout_toRightOf="@+id/image_login"
+                                android:text="Login/ Sign up"
+                                android:textColor="@color/txtbox_text_color_darek"
+                                android:textSize="@dimen/text_size_sub_headre" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp8"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/image_items"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/dp5"
+                                android:src="@drawable/home" />
+
+                            <TextView
+                                android:id="@+id/text_home"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dp15"
+                                android:layout_toRightOf="@+id/image_items"
+                                android:text="Home"
+                                android:textColor="@color/txtbox_text_color_darek"
+                                android:textSize="@dimen/text_size_sub_headre" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_chat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp8"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/image_chat"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/dp5"
+                                android:src="@drawable/chatwithus" />
+
+                            <TextView
+                                android:id="@+id/text_chat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dp15"
+                                android:layout_toRightOf="@+id/image_chat"
+                                android:text="Chat with us"
+                                android:textColor="@color/txtbox_text_color_darek"
+                                android:textSize="@dimen/text_size_sub_headre" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_contact"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp8"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/image_contact"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/dp5"
+                                android:src="@drawable/contactus" />
+
+                            <TextView
+                                android:id="@+id/text_contact"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dp15"
+
+                                android:layout_toRightOf="@+id/image_contact"
+                                android:text="Contact us"
+                                android:textColor="@color/txtbox_text_color_darek"
+                                android:textSize="@dimen/text_size_sub_headre" />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_booking"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp8">
+
+                            <ImageView
+                                android:id="@+id/image_booking"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/dp5"
+                                android:src="@drawable/booking_history" />
+
+                            <TextView
+                                android:id="@+id/text_booking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dp15"
+                                android:layout_toRightOf="@+id/image_booking"
+                                android:text="Booking History"
+                                android:textColor="@color/txtbox_text_color_darek"
+                                android:textSize="@dimen/text_size_sub_headre" />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_rate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp8">
+
+                            <ImageView
+                                android:id="@+id/image_rate"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/dp5"
+                                android:src="@drawable/rateus" />
+
+                            <TextView
+                                android:id="@+id/text_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dp15"
+                                android:layout_toRightOf="@+id/image_rate"
+                                android:text="Rate us"
+                                android:textColor="@color/txtbox_text_color_darek"
+                                android:textSize="@dimen/text_size_sub_headre" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_terms"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp8"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/image_terms"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/dp5"
+                                android:src="@drawable/termsand_conditions" />
+
+                            <TextView
+                                android:id="@+id/text_terms"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dp15"
+                                android:layout_toRightOf="@+id/image_terms"
+                                android:text="Terms and conditions"
+                                android:textColor="@color/txtbox_text_color_darek"
+                                android:textSize="@dimen/text_size_sub_headre" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_privacy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp8"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/image_privacy"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/dp5"
+                                android:src="@drawable/privacy_policy" />
+
+                            <TextView
+                                android:id="@+id/text_privacy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dp15"
+                                android:layout_toRightOf="@+id/image_privacy"
+                                android:text="Privacy policy"
+                                android:textColor="@color/txtbox_text_color_darek"
+                                android:textSize="@dimen/text_size_sub_headre" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_works"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp8"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/image_works"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/dp5"
+                                android:src="@drawable/how_it_works" />
+
+                            <TextView
+                                android:id="@+id/text_works"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dp15"
+                                android:layout_toRightOf="@+id/image_works"
+                                android:text="How it works"
+                                android:textColor="@color/txtbox_text_color_darek"
+                                android:textSize="@dimen/text_size_sub_headre" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_about"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp8"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/image_about"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/dp5"
+                                android:src="@drawable/aboutus" />
+
+                            <TextView
+                                android:id="@+id/text_about"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dp15"
+                                android:layout_toRightOf="@+id/image_about"
+                                android:text="About us"
+                                android:textColor="@color/txtbox_text_color_darek"
+                                android:textSize="@dimen/text_size_sub_headre" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp8">
+
+                            <ImageView
+                                android:id="@+id/image_share"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/dp5"
+                                android:src="@drawable/share_us" />
+
+                            <TextView
+                                android:id="@+id/text_share"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dp15"
+                                android:layout_toRightOf="@+id/image_share"
+                                android:text="Share"
+                                android:textColor="@color/txtbox_text_color_darek"
+                                android:textSize="@dimen/text_size_sub_headre" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_setting"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp8">
+
+                            <ImageView
+                                android:id="@+id/image_setting"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/dp5"
+                                android:src="@drawable/change_password" />
+
+                            <TextView
+                                android:id="@+id/text_setting"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dp15"
+                                android:layout_toRightOf="@+id/image_setting"
+                                android:text="Setting"
+                                android:textColor="@color/txtbox_text_color_darek"
+                                android:textSize="@dimen/text_size_sub_headre" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_logout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp8">
+
+                            <ImageView
+                                android:id="@+id/image_logout"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/dp5"
+                                android:src="@drawable/logout" />
+
+                            <TextView
+                                android:id="@+id/text_logout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dp15"
+                                android:layout_toRightOf="@+id/image_logout"
+                                android:text="Logout"
+                                android:textColor="@color/txtbox_text_color_darek"
+                                android:textSize="@dimen/text_size_sub_headre" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+        </FrameLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</RelativeLayout>

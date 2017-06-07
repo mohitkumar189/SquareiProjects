@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ques_header_height"
+            android:layout_marginTop="@dimen/dp10"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/text_ques"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:padding="@dimen/dp5"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_15" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/hintcolor" />
+
+
+        </RelativeLayout>
+
+        <fragment
+            android:id="@+id/mymap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_top" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:id="@+id/rl_selected_sourceloc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img11"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:src="@drawable/circle_red" />
+
+                <TextView
+                    android:id="@+id/text_selected_sourceloc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_toRightOf="@+id/img11"
+                    android:paddingRight="@dimen/dp5"
+                    android:singleLine="true"
+                    android:text="rhtrurt"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textbox_height"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp30"
+            android:background="@drawable/source_background"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/search_img_source"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp5"
+                android:paddingBottom="@dimen/dp7"
+                android:paddingLeft="@dimen/dp15"
+                android:paddingRight="@dimen/dp15"
+                android:paddingTop="@dimen/dp7"
+                android:src="@drawable/search" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/dp5"
+                android:src="@drawable/circle_red" />
+
+            <com.app.justclap.locationplaceautocomplete.CustomAutoCompleteTextView
+                android:id="@+id/find_address_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_toLeftOf="@+id/search_img_source"
+                android:layout_toRightOf="@+id/img1"
+                android:background="@android:color/transparent"
+                android:gravity="left"
+                android:hint="Enter source location..."
+                android:imeOptions="actionSearch"
+                android:padding="@dimen/dp11"
+                android:singleLine="true"
+                android:textColor="@color/textcolordark"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="@dimen/text_size_13" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/header_dest"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textbox_height"
+            android:layout_below="@+id/header"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp30"
+            android:background="@drawable/source_background"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/dp5"
+                android:src="@drawable/circle_blue" />
+
+            <ImageView
+                android:id="@+id/search_img_dest"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp5"
+                android:paddingBottom="@dimen/dp7"
+                android:paddingLeft="@dimen/dp15"
+                android:paddingRight="@dimen/dp15"
+                android:paddingTop="@dimen/dp7"
+                android:src="@drawable/search" />
+
+
+            <com.app.justclap.locationplaceautocomplete.CustomAutoCompleteTextView
+                android:id="@+id/find_address_dest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_toLeftOf="@+id/search_img_dest"
+                android:layout_toRightOf="@+id/img2"
+                android:background="@android:color/transparent"
+                android:gravity="left"
+                android:hint="Enter drop location..."
+                android:imeOptions="actionSearch"
+                android:padding="@dimen/dp11"
+                android:singleLine="true"
+                android:textColor="@color/textcolordark"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="@dimen/text_size_13" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/image_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp10"
+            android:padding="@dimen/dp10"
+            android:src="@drawable/add_white"
+            android:visibility="gone" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:src="@drawable/add_white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/floatingDate"
+            android:layout_marginLeft="@dimen/dp10"
+            android:padding="@dimen/dp5"
+            android:text=""
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_selector"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_15" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77909090"
+        android:padding="@dimen/dp30"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                android:id="@+id/calendarDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_dark"
+                app:mcv_arrowColor="@color/white"
+                app:mcv_dateTextAppearance="@style/TextAppearance.MyCustomDay"
+                app:mcv_headerTextAppearance="@style/CustomHeaderAppearance"
+                app:mcv_selectionColor="@color/white"
+                app:mcv_weekDayTextAppearance="@style/CustomWeekDayAppearance" />
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:timePickerMode="spinner" />
+
+            <TextView
+                android:id="@+id/text_continue_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/dp10"
+                android:text="Continue"
+                android:textColor="@color/blue_dark"
+                android:textSize="@dimen/text_size_14" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+

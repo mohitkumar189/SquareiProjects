@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:background="@color/txt_color_green_dark">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15">
+
+            <ImageView
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:background="@color/txtbox_hint_color" />
+
+
+            <ImageView
+                android:id="@+id/image_checked11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view"
+                android:layout_alignTop="@+id/view"
+                android:layout_centerVertical="true"
+                android:src="@drawable/timelinechecked" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+
+                <ImageView
+                    android:id="@+id/image_checked21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:src="@drawable/timelinecircle" />
+
+                <ImageView
+                    android:id="@+id/image_checked22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toRightOf="@+id/image_checked21"
+                    android:src="@drawable/timelinecircle" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/image_checked23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="60dp"
+                android:src="@drawable/timelinecircle" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp2"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_checked1"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:maxLines="2"
+                android:text="Request Submitted"
+                android:textColor="@color/text_white" />
+
+            <TextView
+                android:id="@+id/text_req"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_checked2"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:maxLines="2"
+                android:text="Responses Recieved"
+                android:textColor="@color/text_white" />
+
+            <TextView
+                android:id="@+id/text_req1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/image_checked3"
+                android:layout_below="@+id/image_checked3"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:maxLines="2"
+                android:text="Hire Professionals"
+                android:textColor="@color/text_white" />
+
+            <TextView
+                android:id="@+id/text_req2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/image_checked4"
+                android:layout_below="@+id/image_checked4"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="Service Delivery"
+                android:textColor="@color/text_white" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

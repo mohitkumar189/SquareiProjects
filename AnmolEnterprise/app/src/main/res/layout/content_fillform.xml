@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.FillForm"
+    tools:showIn="@layout/activity_fillform">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dp10">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/dp10">
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/textbox_height"
+                    android:hint="Name *"
+                    android:padding="@dimen/dp10"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_black"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="@dimen/text_size_15" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/dp10"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/textbox_height"
+                    android:hint="Email address *"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/dp10"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_black"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="@dimen/text_size_15" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/dp10">
+
+                <EditText
+                    android:id="@+id/edt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/textbox_height"
+                    android:hint="Address *"
+                    android:padding="@dimen/dp10"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_black"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="@dimen/text_size_15" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/dp10">
+
+                <EditText
+                    android:id="@+id/edt_pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/textbox_height"
+                    android:hint="Pincode *"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="@dimen/dp10"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_black"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="@dimen/text_size_15" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/dp10">
+
+                <EditText
+                    android:id="@+id/edt_mobileno"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/textbox_height"
+                    android:hint="Mobile no *"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="@dimen/dp10"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_black"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="@dimen/text_size_15" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/dp10">
+
+                <EditText
+                    android:id="@+id/edt_alternativeno"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/textbox_height"
+                    android:hint="Alternative no *"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="@dimen/dp10"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_black"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="@dimen/text_size_15" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/dp10">
+
+                <EditText
+                    android:id="@+id/edt_cmpnyname"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/textbox_height"
+                    android:hint="Company name of product *"
+                    android:padding="@dimen/dp10"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_black"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="@dimen/text_size_15" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/dp10">
+
+                <EditText
+                    android:id="@+id/edt_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/textbox_height"
+                    android:hint="Comment *"
+                    android:padding="@dimen/dp10"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_black"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="@dimen/text_size_15" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/edt_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textbox_height"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/dp10"
+                android:hint="Date of purchase (if purchase from anmol enterprise)"
+                android:padding="@dimen/dp5"
+                android:textColor="@color/text_color_black"
+                android:textColorHint="@color/text_hint_color"
+                android:textSize="@dimen/text_size_13" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/text_hint_color" />
+
+            <TextView
+                android:id="@+id/upload_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textbox_height"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/dp10"
+                android:padding="@dimen/dp5"
+                android:text="Upload Bill Image"
+                android:gravity="center_vertical"
+                android:textColor="@color/question_color"
+                android:textSize="@dimen/text_size_13" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/colorPrimary"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_17" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

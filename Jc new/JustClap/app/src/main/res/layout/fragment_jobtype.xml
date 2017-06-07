@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/diagonal">
+
+    <LinearLayout
+        android:id="@+id/rl_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/dp10">
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10">
+
+
+                <TextView
+                    android:id="@+id/text_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:padding="@dimen/dp10"
+                    android:text="Find a job"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/text_top_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/text_top"
+                    android:layout_below="@+id/text_top"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:gravity="center"
+                    android:padding="@dimen/dp5"
+                    android:text="Search a job"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/text_size_13" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="@dimen/dp10"
+            android:padding="@dimen/dp10"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/text_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dp10"
+                android:text="Find a job"
+                android:textColor="@color/textcolordark"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/text_bottom_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_bottom"
+                android:layout_below="@+id/text_bottom"
+                android:gravity="center"
+                android:padding="@dimen/dp5"
+                android:text="Search a job"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/text_size_13" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

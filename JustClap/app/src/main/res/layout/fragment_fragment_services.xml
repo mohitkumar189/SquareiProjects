@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FragmentServices">
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/textbox_height"
+        android:background="@color/text_white"
+
+        android:layout_below="@+id/rl_header">
+
+        <TextView
+            android:id="@+id/text_search"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textbox_height"
+            android:background="@drawable/searchinput"
+            android:gravity="center|left"
+            android:hint="Search for Services"
+            android:drawableRight="@drawable/searchicon_grey"
+            android:paddingRight="@dimen/dp10"
+            android:singleLine="true"
+            android:paddingLeft="@dimen/dp10"
+            android:textColorHint="@color/txtbox_hint_color"
+            android:textSize="@dimen/text_size_sub_headre" />
+
+        <Spinner android:id="@+id/spinner_county"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textbox_height"
+            android:layout_toRightOf="@+id/text_search"></Spinner>
+
+
+    </RelativeLayout>
+
+
+    <GridView
+        android:id="@+id/list_services"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:verticalSpacing="@dimen/dp3"
+        android:horizontalSpacing="@dimen/dp3"
+        android:layout_below="@+id/rl_main"
+        android:gravity="center" />
+
+
+</RelativeLayout>

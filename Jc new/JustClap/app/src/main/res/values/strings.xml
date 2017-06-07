@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">JustClap</string>
+
+    <string name="message_network_problem">Please check your internet connectivity.</string>
+    <string name="message_problem">Opps! Something went wrong, please try again.</string>
+    <string name="problem_server">Problem connecting to server, Please try later.</string>
+
+    <!--=====================================services_url==================================================-->
+
+    <string name="url_base_new">http://dev.justclapindia.com/jcnew/api/</string>
+    <string name="url_new">http://jcnew.justclapindia.com/api/</string>
+    <string name="img_url">http://www.justclapindia.com/</string>
+
+    <!--   <string name="url_base_new">http://dev.justclapindia.com/jcold/api/</string>
+       <string name="url_new">http://dev.justclapindia.com/jcnew/api/</string>
+   -->
+
+    <string name="homeData">homeData</string>
+    <string name="getCategoryWiseServices">ApiService/getCategoryWiseServices</string>
+    <string name="getServiceDetails">ApiService/getServiceDetails</string>
+    <string name="getRequestByUserId">ApiServiceOperation/getRequestByUserId</string>
+    <string name="loginuser">ApiUser/login</string>
+    <string name="resendOtp">ApiUser/resendOtp</string>
+    <string name="verifyOtp">ApiUser/verifyOtp</string>
+    <string name="viewVendorProfileForHiring">ApiUser/viewVendorProfileForHiring</string>
+    <string name="logoutDevice">ApiUser/logoutDevice</string>
+    <string name="newLeadsByVendorId">ApiServiceOperation/newLeadsByVendorId</string>
+    <string name="oldLeadsByVendorId">ApiVendor/oldLeadsByVendorId</string>
+    <string name="quoteToLead">ApiServiceOperation/quoteToLead</string>
+    <string name="requestService">ApiServiceOperation/requestService</string>
+    <string name="cancelServiceRequest">ApiServiceOperation/cancelServiceRequest</string>
+    <string name="hireVendor">ApiServiceOperation/hireVendor</string>
+    <string name="viewVendorProfile">ApiUser/viewVendorProfileForHiring</string>
+    <string name="updateProfile">ApiUser/updateProfile</string>
+
+
+    <string name="terms_condition">http://www.justclapindia.com/admin/terms_cond</string>
+    <string name="privacy_policy">http://www.justclapindia.com/admin/privacy_policy</string>
+
+
+    <!--============================End=========================================-->
+
+    <string name="title_activity_user_dashboard">UserDashboard</string>
+    <string name="passwordLength">Password should be at least 6 digit.</string>
+    <string name="validEmail">Please enter valid email address.</string>
+    <string name="enterEmail">Please enter email address.</string>
+    <string name="enter_business">Please enter your business name.</string>
+    <string name="entergender">Please select your gender.</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="search_and_explore">Search and explore</string>
+    <string name="home">Home</string>
+    <string name="requests">Requests</string>
+    <string name="chats">Chats</string>
+    <string name="notification">Notification</string>
+    <string name="all_services">All services</string>
+    <string name="trending_services">Trending Services</string>
+    <string name="view_all">View all</string>
+    <string name="used_services">Used Services</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_map_view_vendors">MapViewVendors</string>
+    <string name="title_activity_login">Login</string>
+    <string name="mobile_no">Mobile no.</string>
+    <string name="login">Login</string>
+    <string name="title_activity_services_detail">ServicesDetail</string>
+    <string name="start">Start</string>
+    <string name="activate_phone_number">Activate phone number</string>
+    <string name="get_otp">Get Otp</string>
+    <string name="vendor_login">Vendor Login</string>
+    <string name="how_it_works">How it works</string>
+    <string name="rateus">Rate us</string>
+    <string name="share_app">Share app</string>
+    <string name="past_requests">Past Requests</string>
+    <string name="reward_points">Reward Points</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_vendor_uni_dashboard">VendorUniDashboard</string>
+    <string name="enter_email">Please enter email</string>
+    <string name="enterPassword">Please enter password</string>
+    <string name="enterFirstName">Please enter Name</string>
+    <string name="enterMobileno">Please enter mobile no</string>
+    <string name="mobileno_Length">Mobile no should be at least 10 digit</string>
+    <string name="title_activity_help_support">HelpSupport</string>
+    <string name="enterMessage">Please enter message</string>
+    <string name="title_activity_edit_vendorprofile">EditVendorprofile</string>
+    <string name="enterPhone">Please enter mobile no</string>
+    <string name="enterProfessional_exp">Please enter professional experience</string>
+    <string name="enterrelevant_exp">Please enter relevant experience</string>
+    <string name="enterAbout">Please enter about you</string>
+    <string name="title_activity_edit_vendor_business_info">EditVendorBusinessInfo</string>
+    <string name="enterBusinessName">Please enter Business name</string>
+    <string name="enter_serviceOffer">Please enter service you offer</string>
+    <string name="enterdistance">Please enter how far you can travel</string>
+    <string name="enterBusinesslocation">Please enter your business location</string>
+    <string name="enterBusinessdesc">Please enter your business description</string>
+    <string name="title_activity_vendor_profile">VendorProfile</string>
+    <string name="collapsing_toolbar">Collapsing Toolbar</string>
+    <string name="error_invalid_email">Please neter valid email id</string>
+    <string name="title_activity_vendor_sinup">VendorSinup</string>
+    <string name="terms">I agree to your <u>terms and conditions</u> and <u>Privacy policy</u></string>
+    <string name="getWalletDetails">getWalletDetails</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+    <string name="enteraddress">Please enter address</string>
+    <string name="title_activity_select_service_list">SelectServiceList</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+</resources>

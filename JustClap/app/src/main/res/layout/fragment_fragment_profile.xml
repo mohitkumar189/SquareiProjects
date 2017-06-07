@@ -1,0 +1,254 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vendor_fragments.FragmentProfile">
+
+    <RelativeLayout
+        android:id="@+id/rl_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:background="@color/layout_background">
+
+        <TextView
+            android:id="@+id/text_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp10"
+            android:singleLine="true"
+            android:text="Personal info"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text_size_19"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/text_profile"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dp10"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/editicon" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nest_scrollview1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@+id/rl_edit_profile">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txtbox_text_color_darek" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textbox_height_medium"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="Name"
+                android:textColor="@color/txt_orange"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="hemanta"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_17" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txtbox_text_color_darek" />
+
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textbox_height_medium"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="Email"
+
+                android:textColor="@color/txt_orange"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <TextView
+                android:id="@+id/text_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="hemanta@gmail.com"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_17" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txtbox_text_color_darek" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textbox_height_medium"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="Phone"
+
+                android:textColor="@color/txt_orange"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <TextView
+                android:id="@+id/text_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="46578567865"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_17" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txtbox_text_color_darek" />
+
+            <TextView
+                android:id="@+id/professional_experience"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textbox_height_medium"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="Professional Experience"
+
+                android:textColor="@color/txt_orange"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <TextView
+                android:id="@+id/text_professional_experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="Btech"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_17" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txtbox_text_color_darek" />
+
+            <TextView
+                android:id="@+id/relavent_experience"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textbox_height_medium"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="Relevant Experience"
+
+                android:textColor="@color/txt_orange"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <TextView
+                android:id="@+id/text_relavent_experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="Btech"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_17" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txtbox_text_color_darek" />
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textbox_height_medium"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="About"
+
+                android:textColor="@color/txt_orange"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <TextView
+                android:id="@+id/text_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="hello"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_17" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txtbox_text_color_darek" />
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

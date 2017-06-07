@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/image_cross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp20"
+        android:src="@drawable/cross" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_cross"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/text_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp15"
+                android:paddingLeft="@dimen/dp_50"
+                android:paddingTop="@dimen/dp15"
+                android:text="@string/login"
+                android:textColor="@color/textcolordark"
+                android:textSize="@dimen/text_size_17"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp15"
+                android:paddingLeft="@dimen/dp_50"
+                android:paddingTop="@dimen/dp15"
+                android:text="Dashboard"
+                android:textColor="@color/textcolordark"
+                android:textSize="@dimen/text_size_17" />
+
+
+            <TextView
+                android:id="@+id/text_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp15"
+                android:paddingLeft="@dimen/dp_50"
+                android:paddingTop="@dimen/dp15"
+                android:text="View &amp; edit profile"
+                android:textColor="@color/textcolordark"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:id="@+id/text_how_it_works"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp15"
+                android:paddingLeft="@dimen/dp_50"
+                android:paddingTop="@dimen/dp15"
+                android:text="@string/how_it_works"
+                android:textColor="@color/textcolordark"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:id="@+id/text_credits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp15"
+                android:paddingLeft="@dimen/dp_50"
+                android:paddingTop="@dimen/dp15"
+                android:text="Credits"
+                android:textColor="@color/textcolordark"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:id="@+id/text_rateus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp15"
+                android:paddingLeft="@dimen/dp_50"
+                android:paddingTop="@dimen/dp15"
+                android:text="@string/rateus"
+                android:textColor="@color/textcolordark"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:id="@+id/text_share_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp15"
+                android:paddingLeft="@dimen/dp_50"
+                android:paddingTop="@dimen/dp15"
+                android:text="@string/share_app"
+                android:textColor="@color/textcolordark"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:id="@+id/text_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp15"
+                android:paddingLeft="@dimen/dp_50"
+                android:paddingTop="@dimen/dp15"
+                android:text="Settings"
+                android:textColor="@color/textcolordark"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:id="@+id/text_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp15"
+                android:paddingLeft="@dimen/dp_50"
+                android:paddingTop="@dimen/dp15"
+                android:text="@string/logout"
+                android:textColor="@color/textcolordark"
+                android:textSize="@dimen/text_size_17" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_vendor_login"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_selector"
+        android:text="@string/vendor_login"
+        android:visibility="gone" />
+
+</RelativeLayout>

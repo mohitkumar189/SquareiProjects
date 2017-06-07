@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">LunaVista</string>
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+    <string name="signup"><u>Sign up</u></string>
+
+    <string name="url_base">http://dev.logiguys.com/lunavista/api/</string>
+    <string name="url_login">login</string>
+    <string name="url_register">register</string>
+    <string name="url_forgetPassword">forgetPassword</string>
+    <string name="url_likeUnlikeSong">likeUnlikeSong</string>
+    <string name="url_likeUnlikeComment">likeUnlikeComment</string>
+    <string name="registerSocial">registerSocial</string>
+    <string name="socialLogin">socialLogin</string>
+    <string name="url_songsList">songsList</string>
+    <string name="url_playlistList">playlistList</string>
+    <string name="url_songDetails">songDetails</string>
+    <string name="url_setSongComment">setSongComment</string>
+    <string name="url_submitRecording">submitRecording</string>
+    <string name="url_recordingList">recordingList</string>
+    <string name="url_popularSongsList">popularSongsList</string>
+    <string name="url_registerSocial">registerSocial</string>
+    <string name="url_updateProfile">updateProfile</string>
+    <string name="url_getPublicRecordingList">getPublicRecordingList</string>
+    <string name="url_getProfile">getProfile</string>
+
+    <string name="google_app_id">com.app.lunavista</string>
+    <string name="message_network_problem">Please check your internet connectivity.</string>
+
+    <string name="message_problem">Opps! Something went wrong, please try again.</string>
+    <string name="title_activity_play_song_video">PlaySongVideo</string>
+
+    <string name="facebook_app_id">757954114347902</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_upload_video">UploadVideo</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+
+
+</resources>

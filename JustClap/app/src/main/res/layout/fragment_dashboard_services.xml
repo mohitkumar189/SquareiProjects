@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_header"
+            android:background="@color/text_white">
+
+            <TextView
+                android:id="@+id/text_search"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textbox_height_medium"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/dp5"
+                android:background="@drawable/searchinput"
+                android:drawableRight="@drawable/search_button"
+                android:gravity="center|left"
+                android:hint="Search for Services"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:singleLine="true"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textColorHint="@color/txtbox_hint_color"
+                android:textSize="@dimen/text_size_sub_headre"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_main">
+
+            <RelativeLayout
+                android:id="@+id/rl_pager"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:fillViewport="true"
+                    android:measureAllChildren="false"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/ll_scrol"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <RelativeLayout
+                    android:id="@+id/viewPagerIndicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/viewPagerCountDots"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:orientation="horizontal" />
+
+                </RelativeLayout>
+
+
+                <!--   <me.relex.circleindicator.CircleIndicator
+                       android:id="@id/indicator"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentBottom="true"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginBottom="@dimen/dp10"
+                       android:visibility="gone"
+                       app:fillColor="@color/txt_orange"
+                       app:pageColor="@color/text_white" />-->
+
+                <Spinner
+                    android:id="@+id/spinner_county"
+                    android:layout_width="110dp"
+                    android:layout_height="@dimen/textbox_height"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_1"
+            android:layout_marginTop="@dimen/dp5">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl_pager"
+                android:visibility="gone">
+
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <!-- <GridView
+             android:id="@+id/list_servicesGrid"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_below="@+id/rl_main"
+             android:layout_margin="@dimen/dp5"
+             android:background="@color/text_white"
+             android:gravity="center"
+             android:horizontalSpacing="@dimen/dp5"
+             android:numColumns="2"
+             android:verticalSpacing="@dimen/dp5"
+             android:visibility="gone" />-->
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_1"
+            android:layout_marginTop="@dimen/dp5">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_servicesGrid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl_pager"
+                android:layout_margin="@dimen/dp5"
+                android:visibility="visible">
+
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/list_icon"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include layout="@layout/network_issue_layout" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77909090"
+        android:padding="@dimen/dp30">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                android:id="@+id/calendarDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_dark"
+                app:mcv_arrowColor="@color/white"
+                app:mcv_dateTextAppearance="@color/white"
+                app:mcv_headerTextAppearance="@color/white"
+                app:mcv_selectionColor="@color/white"
+                app:mcv_weekDayTextAppearance="@color/white" />
+
+            <TimePicker
+                android:id="@+id/timePicker1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:timePickerMode="spinner" />
+
+
+            <TextView android:id="@+id/text_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/dp10"
+                android:textSize="@dimen/text_size_14"
+                android:text="Continue"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+   <!-- private MaterialCalendarView calendarView;
+    private TimePicker timePicker;
+
+    calendarView = (MaterialCalendarView) findViewById(R.id.calendarView);
+    calendarView.setOnDateChangedListener(this);
+    Calendar calendar = Calendar.getInstance();
+    calendarView.setSelectedDate(calendar);
+    calendarView.state().edit().setCalendarDisplayMode(CalendarMode.WEEKS)
+    .setMinimumDate(calendar).commit();
+    timePicker = (TimePicker) findViewById(R.id.timePicker);
+
+<style name="TextAppearance.MyCustomDay" parent="android:TextAppearance.DeviceDefault.Small">
+    <item name="android:textSize">12sp</item>
+    <item name="android:textColor">@color/my_custom_day_color</item>
+</style>
+
+-->
+
+</LinearLayout>
+

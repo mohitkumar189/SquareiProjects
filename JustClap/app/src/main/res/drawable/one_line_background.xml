@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetBottom="-1dp"
+    android:insetLeft="-1dp"
+    android:insetRight="-1dp">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rectangle">
+        <stroke
+            android:width="1dp"
+            android:color="#b7b7b7" />
+
+        <solid android:color="#ffffff" />
+    </shape>
+</inset>

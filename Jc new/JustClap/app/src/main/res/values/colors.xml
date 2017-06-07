@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#222222</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#007bfc</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="text_white">#ffffff</color>
+    <color name="toolbar_color">#222222</color>
+    <color name="hintcolor">#777777</color>
+    <color name="txtbox_hint_color">#777777</color>
+    <color name="text_color_light">#707070</color>
+    <color name="tab_bg_color">#4e4e4e</color>
+    <color name="textcolor">#555555</color>
+    <color name="textcolordark">#333333</color>
+    <color name="txtbox_text_color_darek">#333333</color>
+    <color name="bg_color">#e7e7e7</color>
+    <color name="green_bg">#47d1ad</color>
+    <color name="text_green_color">#66c0a9</color>
+    <color name="text_blue">#0066fb</color>
+    <color name="blue_line_color">#37c2ec</color>
+    <color name="blue_line_color_light">#bfe8ec</color>
+    <color name="blue_dark">#0166fe</color>
+    <color name="button_bg">#007bfc</color>
+    <color name="button_pressed">#1e6dbf</color>
+    <color name="vendor_toolbar">#036ce2</color>
+    <color name="my_custom_day_color">#ffffff</color>
+    <color name="button_red">#f1605b</color>
+    <color name="text_selected_bg">#f4f4f4</color>
+    <color name="grey_bg">#cccccc</color>
+    <color name="yellow">#f8d30f</color>
+    <color name="text_green">#5db893</color>
+    <color name="selected_row_color">#77075e54</color>
+</resources>

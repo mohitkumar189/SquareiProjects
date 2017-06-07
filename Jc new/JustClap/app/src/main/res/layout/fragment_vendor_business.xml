@@ -1,0 +1,243 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8ebf0"
+    tools:context="com.app.justclap.vendorfragments.FragmentProfile">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/dp10">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_business_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp5"
+                        android:text="Business Info"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/text_size_11" />
+
+                    <ImageView
+                        android:id="@+id/image_edit"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/dp5"
+                        android:src="@drawable/edit_icon" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textBuisnessName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="Buisness Name"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/text_size_12" />
+
+
+                <TextView
+                    android:id="@+id/textBuisnessNameValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="Business"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/text_size_13" />
+
+                <TextView
+                    android:id="@+id/textServiceOffered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="Service you offer"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/text_size_12" />
+
+
+                <TextView
+                    android:id="@+id/textServiceOfferedValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="Yoga"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/text_size_13" />
+
+                <TextView
+                    android:id="@+id/textDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="How fa you can travel ?"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/text_size_12" />
+
+
+                <TextView
+                    android:id="@+id/textDistanceValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="500 Km"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/text_size_13" />
+
+
+                <TextView
+                    android:id="@+id/textBusinesslocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="Business Location"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/text_size_12" />
+
+
+                <TextView
+                    android:id="@+id/textBusinesslocationValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="Noida"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/text_size_13" />
+
+                <TextView
+                    android:id="@+id/textBusinessDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="Business Description"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/text_size_12" />
+
+
+                <TextView
+                    android:id="@+id/textBusinessDescriptionValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="5 yrs"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/text_size_13" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textsocial_presence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp15"
+                android:background="#e8ebf0"
+                android:padding="@dimen/dp10"
+                android:text="Your Social Presence"
+                android:textColor="#9a9b9f"
+                android:textSize="@dimen/text_size_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/dp10">
+
+
+                <TextView
+                    android:id="@+id/textwebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="Website URL"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/text_size_12" />
+
+
+                <TextView
+                    android:id="@+id/textwebsiteValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="http://xyz.com"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/text_size_13" />
+
+                <TextView
+                    android:id="@+id/textfacebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="Facebook URL"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/text_size_12" />
+
+
+                <TextView
+                    android:id="@+id/textfacebookValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="abc@yahoo.com"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/text_size_13" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_add_agreement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp15">
+
+                    <ImageView
+                        android:id="@+id/image_add"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/floating_plus" />
+
+                    <TextView
+                        android:id="@+id/textadd_agreement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_toRightOf="@+id/image_add"
+                        android:paddingLeft="@dimen/dp5"
+                        android:text="Add Agreement"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_13" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_agreement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

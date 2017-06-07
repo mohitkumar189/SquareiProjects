@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/text_white"
+    tools:context=".vendor_fragments.FragmentProfile">
+
+    <android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/nest_scrollview1"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/dp5"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_edit_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+
+                <ImageView
+                    android:id="@+id/image_profile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/user" />
+
+                <TextView
+                    android:id="@+id/vendor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_profile"
+                    android:layout_centerHorizontal="true"
+
+                    android:padding="@dimen/dp10"
+                    android:singleLine="true"
+                    android:text="Name"
+                    android:textColor="@color/txtbox_text_color_darek"
+                    android:textSize="@dimen/text_size_16" />
+
+
+                <RatingBar
+                    android:id="@+id/rating"
+                    style="@style/customRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vendor_name"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="@dimen/dp10" />
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txtbox_text_color_darek"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/professional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp10"
+                android:singleLine="true"
+                android:text="Professional Experience"
+                android:textColor="@color/txt_orange"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <TextView
+                android:id="@+id/text_professional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:paddingTop="@dimen/dp5"
+                android:text="hemanta"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_17" />
+
+
+            <TextView
+                android:id="@+id/qualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp2"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp10"
+                android:singleLine="true"
+                android:text="Relevant Qualification"
+                android:textColor="@color/txt_orange"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <TextView
+                android:id="@+id/text_qualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:paddingTop="@dimen/dp5"
+                android:text="hemanta"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_17" />
+
+
+            <TextView
+                android:id="@+id/introduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp2"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp10"
+                android:singleLine="true"
+                android:text="Introduction"
+                android:textColor="@color/txt_orange"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <TextView
+                android:id="@+id/text_introduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:paddingTop="@dimen/dp5"
+                android:text="hemanta"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_17" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

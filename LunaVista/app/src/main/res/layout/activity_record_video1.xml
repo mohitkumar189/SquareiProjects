@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_download_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bg_landscape"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp5"
+            android:drawableLeft="@drawable/recoding_icon"
+            android:drawablePadding="@dimen/dp10"
+            android:padding="@dimen/dp10"
+            android:text="Recording"
+            android:textColor="@color/txtbox_text_color_darek"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/dp10"
+            android:text="Loading"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_headre"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_loading"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/img_loading1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp3"
+                android:src="@drawable/loading" />
+
+            <ImageView
+                android:id="@+id/img_loading2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_loading1"
+                android:padding="@dimen/dp3"
+                android:src="@drawable/loading" />
+
+            <ImageView
+                android:id="@+id/img_loading3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_loading2"
+                android:padding="@dimen/dp3"
+                android:src="@drawable/loading" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_record_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_bg_landscape"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rlll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:padding="@dimen/dp5"
+                android:text="The Way You Look Tonight,"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_toRightOf="@+id/text1"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/dp5"
+                android:text="in the style off Frank Lioyd"
+                android:textColor="@color/hint_color_light_grey"
+                android:textSize="@dimen/text_size_15" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlll1"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/horizental_line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlll1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp5"
+                android:padding="@dimen/dp5"
+                android:text="Ready to start singing ?"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp5"
+                android:drawableLeft="@drawable/camera_icon"
+                android:drawablePadding="@dimen/dp10"
+                android:paddingLeft="@dimen/dp10"
+                android:text="Choose cam mode (front,back,off)"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp10"
+                android:drawableLeft="@drawable/left_volume_icon"
+                android:drawablePadding="@dimen/dp10"
+                android:paddingLeft="@dimen/dp10"
+                android:text="Set the volume"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp10"
+                android:drawableLeft="@drawable/record_start_btn"
+                android:drawablePadding="@dimen/dp10"
+                android:paddingLeft="@dimen/dp10"
+                android:text="Tap  &quot;Record&quot;  button to start"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_video"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp5">
+
+
+        <LinearLayout
+            android:id="@+id/camera_preview"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="horizontal" />
+
+
+        <ImageView
+            android:id="@+id/image_ChangeCamera"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/camera_preview"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/flip" />
+
+
+    </RelativeLayout><!--  <VideoView
+          android:id="@+id/video_view"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_toLeftOf="@+id/rl_video"
+          android:minHeight="150dp"
+          android:visibility="visible" />-->
+
+    <RelativeLayout
+        android:id="@+id/rl_playvideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/rl_video"
+        android:visibility="gone">
+
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/dp5"
+            android:background="#000000">
+            <!-- Video player -->
+            <VideoView
+                android:id="@+id/video_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"></VideoView>
+        </FrameLayout>
+
+
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/button_capture"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        android:background="@drawable/stop"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/button_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_capture"
+        android:layout_alignTop="@+id/button_capture"
+        android:layout_marginLeft="@dimen/dp10"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/button_capture"
+        android:src="@drawable/vocal_btn"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+</RelativeLayout>

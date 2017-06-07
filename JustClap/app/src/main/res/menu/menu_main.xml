@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.Splash">
+    <item
+        android:id="@+id/listmenu"
+        android:orderInCategory="100"
+        android:title="@string/action_list"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/gridmenu"
+        android:orderInCategory="100"
+        android:title="@string/action_grid"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/sufflemenu"
+        android:orderInCategory="100"
+        android:title="@string/action_suffle"
+        app:showAsAction="never" />
+
+
+</menu>

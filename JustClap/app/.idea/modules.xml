@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../XpertMatch.iml" filepath="$PROJECT_DIR$/../XpertMatch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../library/library.iml" filepath="$PROJECT_DIR$/../library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../simple-crop-image-lib/simple-crop-image-lib.iml" filepath="$PROJECT_DIR$/../simple-crop-image-lib/simple-crop-image-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../viewpagerindicator/viewpagerindicator.iml" filepath="$PROJECT_DIR$/../viewpagerindicator/viewpagerindicator.iml" />
+    </modules>
+  </component>
+</project>

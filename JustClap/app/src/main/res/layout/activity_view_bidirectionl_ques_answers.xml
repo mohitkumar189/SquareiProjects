@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ViewDetailAnswers">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:layout_marginTop="@dimen/dp10"
+        android:padding="@dimen/dp5">
+
+
+        <TextView
+            android:id="@+id/text_date1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:padding="@dimen/dp5"
+            android:text="Scheduled Date"
+            android:textColor="@color/txtbox_text_color"
+            android:textSize="@dimen/text_size_15"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/text_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_date1"
+            android:layout_marginLeft="@dimen/dp20"
+            android:padding="@dimen/dp5"
+            android:text="address"
+            android:textColor="@color/txtbox_text_color_darek"
+            android:textSize="@dimen/text_size_15"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_address"
+            android:layout_marginLeft="@dimen/dp20"
+            android:padding="@dimen/dp5"
+            android:text="address"
+            android:textColor="@color/txtbox_text_color_darek"
+            android:textSize="@dimen/text_size_15"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/text_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_day"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:padding="@dimen/dp5"
+            android:text="Service"
+            android:textColor="@color/txtbox_text_color"
+            android:textSize="@dimen/text_size_15" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/text_service"
+            android:layout_marginLeft="@dimen/dp10" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include layout="@layout/network_issue_layout" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

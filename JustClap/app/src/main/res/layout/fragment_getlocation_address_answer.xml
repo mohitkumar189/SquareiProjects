@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".fragment.FragmentServices">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/text_white">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_height"
+            android:layout_marginTop="@dimen/dp10">
+
+
+            <TextView
+                android:id="@+id/text_ques"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:padding="@dimen/dp10"
+                android:text=""
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/text_size_17" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/txtbox_hint_color" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_top"
+            android:layout_margin="@dimen/dp10"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/text_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:text="This helps us identify professionals near you."
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_sub_headre"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:hint="Building, house, flat number"
+                android:padding="@dimen/dp10"
+                android:enabled="false"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textColorHint="@color/txtbox_hint_color"
+                android:textSize="@dimen/text_size_sub_headre" />
+
+
+            <TextView
+                android:id="@+id/text_landmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:hint="Landmark"
+                android:padding="@dimen/dp10"
+                android:enabled="false"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textColorHint="@color/txtbox_hint_color"
+                android:textSize="@dimen/text_size_sub_headre" />
+
+            <TextView
+                android:id="@+id/edit_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search your location.."
+
+                android:padding="@dimen/dp10"
+                android:enabled="false"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textColorHint="@color/txtbox_hint_color"
+                android:layout_marginTop="@dimen/dp10"
+                android:textSize="@dimen/text_size_sub_headre" />
+
+            <TextView
+                android:id="@+id/text_getLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:drawableLeft="@drawable/round_location"
+                android:drawablePadding="@dimen/dp10"
+                android:visibility="gone"
+                android:padding="@dimen/dp10"
+                android:text="Get Current Location"
+                android:textColor="@color/txt_orange"
+                android:textSize="@dimen/text_size_17" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

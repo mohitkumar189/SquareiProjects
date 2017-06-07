@@ -1,0 +1,352 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".vendor_fragments.FragmentProfile">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:background="@color/layout_background">
+
+        <TextView
+            android:id="@+id/text_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp10"
+            android:singleLine="true"
+            android:text="Business info"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text_size_19"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/text_profile"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dp10"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/editicon" />
+
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nest_scrollview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_edit_profile"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txtbox_text_color_darek" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textbox_height_medium"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="Business Name"
+                android:textColor="@color/txt_orange"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="hemanta"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_17" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txtbox_text_color_darek" />
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textbox_height_medium"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="City"
+                android:textColor="@color/txt_orange"
+                android:textSize="@dimen/text_size_16"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/text_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="Delhi"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_17"
+                android:visibility="gone" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txtbox_text_color_darek"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/services"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textbox_height_medium"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="Services you offer"
+
+                android:textColor="@color/txt_orange"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <TextView
+                android:id="@+id/text_services"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="Parlour"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_17" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txtbox_text_color_darek" />
+
+
+            <TextView
+                android:id="@+id/travel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textbox_height_medium"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="How far you can travel ?"
+
+                android:textColor="@color/txt_orange"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <TextView
+                android:id="@+id/text_travel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="10 km"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_17" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txtbox_text_color_darek" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textbox_height_medium"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="Business Location"
+
+                android:textColor="@color/txt_orange"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <TextView
+                android:id="@+id/text_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:text="address"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_17" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txtbox_text_color_darek" />
+
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textbox_height_medium"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="Business Description"
+
+                android:textColor="@color/txt_orange"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <TextView
+                android:id="@+id/text_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:text="description"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_17" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height"
+                android:background="@color/layout_background"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp15"
+                android:paddingRight="@dimen/dp10"
+                android:singleLine="true"
+                android:text="Your social Presence"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/text_size_19" />
+
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textbox_height_medium"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="Website URL"
+                android:textColor="@color/txt_orange"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <TextView
+                android:id="@+id/text_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="http://"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_17" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txtbox_text_color_darek" />
+
+            <TextView
+                android:id="@+id/facebbok"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textbox_height_medium"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="Facebbok URL"
+                android:textColor="@color/txt_orange"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <TextView
+                android:id="@+id/text_facebbok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:singleLine="true"
+                android:text="http://"
+                android:textColor="@color/txtbox_text_color_darek"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:id="@+id/text_addcertificate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height"
+                android:background="@color/layout_background"
+                android:drawablePadding="@dimen/dp10"
+                android:drawableRight="@drawable/add"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp15"
+                android:paddingRight="@dimen/dp10"
+                android:singleLine="true"
+                android:text="Add Aggrement"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/text_size_19" />
+
+                <com.app.justclap.customview.ExpandableHeightGridView
+                    android:id="@+id/list_certificates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/dp5"
+                    android:isScrollContainer="false"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="@dimen/dp5" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

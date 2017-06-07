@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2eb1bd</color>
+    <color name="colorPrimaryDark">#2ea2b6</color>
+    <color name="colorAccent">#2ea2b6</color>
+    <color name="dashboard_layoutbg_color">#99272727</color>
+    <color name="textcolordark">#444444</color>
+    <color name="white">#ffffff</color>
+    <color name="text_color_black">#000000</color>
+    <color name="text_hint_color">#777777</color>
+    <color name="question_color">#2792a4</color>
+</resources>

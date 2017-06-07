@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e91c1d</color>
+    <color name="colorPrimaryDark">#d21718</color>
+    <color name="colorAccent">#e91c1d</color>
+    <color name="colorSplash">#FFFFFF</color>
+    <color name="colorTextWhite">#FFFFFF</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="txtbox_hint_color">#d9cccc</color>
+    <color name="txtbox_text_color">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="text_red_dark">#d21718</color>
+    <color name="text_red">#e91c1d</color>
+    <color name="txtbox_text_color_darek">#555555</color>
+    <color name="text_color_grey">#777777</color>
+    <color name="hint_color_light_grey">#cccccc</color>
+    <color name="hint_color">#b0afaf</color>
+
+    <color name="unselected_seekbar_color">#b9b9b9</color>
+    <color name="selected_seekbar_color">#f44e4e</color>
+
+
+</resources>

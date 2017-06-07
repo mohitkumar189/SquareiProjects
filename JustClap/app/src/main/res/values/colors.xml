@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff8518</color>
+    <color name="colorPrimaryDark">#FA7804</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_theem">#FF01C2C1</color>
+    <color name="color_theem_lite">#2201C2C1</color>
+    <color name="light_red">#88efd9dc</color>
+    <color name="light_green">#5598c7a1</color>
+    <color name="txtbox_hint_color">#cccccc</color>
+    <color name="txtbox_text_color">#777777</color>
+    <color name="txtbox_text_colorlight">#77777777</color>
+    <color name="txtbox_text_color_darek">#555555</color>
+    <color name="txt_color_green_dark">#638795</color>
+    <color name="txt_color_skyblue">#DAF5FE</color>
+    <color name="txt_color_green">#6CD5AD</color>
+    <color name="text_color_darek">#333333</color>
+    <color name="text_color">#FF9000</color>
+    <color name="txt_orange">#de8e3f</color>
+    <color name="txt_orangedark">#bf5225</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="textColorPrimaryselected">#F2F0F0</color>
+    <color name="txt_orange_light">#fd8d2a</color>
+    <color name="yellow">#d1c23e</color>
+    <color name="text_white">#ffffff</color>
+    <color name="layout_background">#EAE5E5</color>
+    <color name="txt_blue">#028E9C</color>
+    <color name="txt_black">#000000</color>
+    <color name="colorforeground">#cccccc</color>
+    <color name="text_color_login">#5777B4</color>
+    <color name="text_color_blue">#075e54</color>
+    <color name="text_color_blue_light">#77075e54</color>
+    <color name="selected_row_color">#77075e54</color>
+
+
+</resources>

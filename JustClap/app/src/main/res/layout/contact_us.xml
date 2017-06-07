@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TermsAndconditions">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="vertical"
+        android:padding="@dimen/dp5">
+
+        <TextView
+            android:id="@+id/text_terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/layout_background"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text=" Head Office (Noida)"
+            android:textColor="@color/txtbox_text_color_darek"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/dp10"
+            android:text=" JustClap Technologies Pvt Ltd,"
+            android:textColor="@color/txtbox_text_color_darek"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/dp10"
+            android:text="E2, First Floor, Sec – 63, Noida - 201301"
+            android:textColor="@color/txtbox_text_color_darek"
+            android:textSize="@dimen/text_size_16" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/dp10"
+            android:text="Email: contact@justclapindia.com"
+            android:textColor="@color/txtbox_text_color_darek"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/layout_background"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:visibility="gone"
+            android:text="Delhi Office"
+            android:textColor="@color/txtbox_text_color_darek"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/dp10"
+            android:visibility="gone"
+            android:text="C46, First Floor, Jail Road, Tilak Nagar"
+            android:textColor="@color/txtbox_text_color_darek"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/dp10"
+            android:visibility="gone"
+            android:text="New Delhi – 110018"
+            android:textColor="@color/txtbox_text_color_darek"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/dp10"
+            android:visibility="gone"
+            android:text="Email: contact@justclapindia.com"
+            android:textColor="@color/txtbox_text_color_darek"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+
+</RelativeLayout>

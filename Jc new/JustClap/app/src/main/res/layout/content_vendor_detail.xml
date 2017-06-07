@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_services_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f7fb"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.app.justclap.activities.VendorDetail"
+    tools:showIn="@layout/activity_vendor_detail">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_start">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="110dp" />
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/text_hired"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@color/green_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp20"
+                    android:text="Hired"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_16"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/image_user"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_user"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_toLeftOf="@+id/text_quote"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dp20">
+
+                    <TextView
+                        android:id="@+id/text_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ramesh"
+                        android:textColor="@color/textcolordark"
+                        android:textSize="@dimen/text_size_15"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/ratingbar"
+                        style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:rating="5"
+                        android:theme="@style/RatingBar" />
+
+                    <TextView
+                        android:id="@+id/text_userdetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ramesh"
+                        android:textColor="@color/textcolordark"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_quote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/image_user"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:text="1500/-"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/text_size_15"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_business"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                android:padding="@dimen/dp5">
+
+                <TextView
+                    android:id="@+id/text_businesstype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp15"
+                    android:paddingTop="@dimen/dp5"
+                    android:text="Business Type"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/text_size_15"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/text_servicesname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_businesstype"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp15"
+                    android:paddingTop="@dimen/dp5"
+                    android:text=""
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/text_size_12" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_followers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                android:padding="@dimen/dp5">
+
+                <TextView
+                    android:id="@+id/btn_follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/button_selector"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingRight="@dimen/dp10"
+                    android:paddingTop="@dimen/dp5"
+                    android:text="Follow"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_followers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp15"
+                    android:paddingTop="@dimen/dp5"
+                    android:text="Followers"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/text_size_15"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/text_followersdetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_followers"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp15"
+                    android:paddingTop="@dimen/dp5"
+                    android:text="Laptop Repair"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/text_size_12" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:padding="@dimen/dp10"
+                    android:text="Videos"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:alpha=".3"
+                    android:background="@color/hintcolor" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyler_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_150"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@color/white"
+                    android:padding="@dimen/dp10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:padding="@dimen/dp10"
+                    android:text="Gallery"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:alpha=".3"
+                    android:background="@color/hintcolor" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyler_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

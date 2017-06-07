@@ -1,0 +1,6 @@
+
+
+For request focus on item add lines in xml
+
+   android:focusable="true"
+   android:focusableInTouchMode="true"

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_reviews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      />
+
+    <LinearLayout
+        android:id="@+id/linear_empty_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dp10"
+            android:src="@drawable/review" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/dp5"
+            android:text="NO REVIEWS FOUND"
+            android:textColor="@color/txtbox_text_color_darek"
+            android:textSize="@dimen/text_size_headre"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/dp5"
+            android:gravity="center"
+            android:text="Professional does't have any review."
+            android:textColor="@color/txtbox_text_color_darek"
+            android:textSize="@dimen/text_size_17" />
+    </LinearLayout>
+</RelativeLayout>

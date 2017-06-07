@@ -1,0 +1,190 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardElevation="5sp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_vendor"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:id="@+id/rl_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image_vendor">
+
+            <RelativeLayout
+                android:id="@+id/rl_header"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+
+
+                    android:padding="@dimen/dp5">
+
+                    <TextView
+                        android:id="@+id/text_vendor_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/userview"
+                        android:drawablePadding="@dimen/dp5"
+                        android:text="Atique Fitness"
+                        android:textColor="@color/text_color_darek"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_vendor_name"
+                        android:drawableLeft="@drawable/mail"
+                        android:drawablePadding="@dimen/dp5"
+                        android:paddingTop="@dimen/dp3"
+                        android:text="Hired 10 times"
+                        android:textColor="@color/txtbox_text_color"
+                        android:textSize="@dimen/text_size_15" />
+
+
+                    <TextView
+                        android:id="@+id/mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/email"
+                        android:drawableLeft="@drawable/smallphone"
+                        android:drawablePadding="@dimen/dp5"
+                        android:paddingTop="@dimen/dp3"
+                        android:text="Quote: "
+                        android:textColor="@color/txtbox_text_color"
+                        android:textSize="@dimen/text_size_new" />
+
+                    <TextView
+                        android:id="@+id/text_quoted_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_serviceAssigned"
+                        android:layout_toRightOf="@+id/text_quoted"
+                        android:paddingTop="@dimen/dp5"
+                        android:text="Rs 1000 per visit"
+                        android:textColor="@color/text_color_darek"
+                        android:textSize="@dimen/text_size_new"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp5">
+
+                    <TextView
+                        android:id="@+id/text_apply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp5"
+                        android:background="@color/txt_orange"
+                        android:padding="@dimen/dp5"
+                        android:text="Save"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/dp17"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <RatingBar
+                        android:id="@+id/rating"
+                        style="@style/customRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/dp10"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/review_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rating"
+                        android:paddingLeft="@dimen/dp5"
+                        android:text="13 reviews"
+                        android:textColor="@color/txtbox_text_color"
+                        android:textSize="@dimen/text_size_small"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_header"
+
+
+                android:layout_marginLeft="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/text_chats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:drawableLeft="@drawable/smallchat"
+                    android:drawablePadding="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="Chat"
+                    android:textColor="@color/txtbox_text_color_darek"
+                    android:textSize="@dimen/text_size_new" />
+
+                <TextView
+                    android:id="@+id/text_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/smallphone"
+                    android:drawablePadding="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="Call"
+                    android:textColor="@color/txtbox_text_color_darek"
+                    android:textSize="@dimen/text_size_new" />
+
+                <TextView
+                    android:id="@+id/text_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:drawableLeft="@drawable/id"
+                    android:drawablePadding="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="Profile"
+                    android:textColor="@color/txtbox_text_color_darek"
+                    android:textSize="@dimen/text_size_new" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/maplayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/text_blue">
+
+        <ImageView
+            android:id="@+id/search_img"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp5"
+            android:paddingBottom="@dimen/dp7"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingRight="@dimen/dp15"
+            android:paddingTop="@dimen/dp7"
+            android:src="@drawable/search" />
+
+
+        <com.app.justclap.locationplaceautocomplete.CustomAutoCompleteTextView
+            android:id="@+id/find_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_toLeftOf="@+id/search_img"
+            android:background="@android:color/transparent"
+            android:gravity="left"
+            android:hint="Search your location.."
+            android:imeOptions="actionSearch"
+            android:padding="@dimen/dp11"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="@dimen/text_size_14" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/text_blue"
+        android:text="Pick Location"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14"
+        android:textStyle="bold">
+
+    </Button>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/select"
+        android:layout_below="@+id/header">
+
+        <RelativeLayout
+            android:id="@+id/rl_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_fav"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/dp2"
+                android:layout_marginRight="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp2"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingLeft="21dp"
+                android:paddingRight="@dimen/dp15"
+                android:paddingTop="@dimen/dp5"
+
+                />
+
+            <View
+                android:id="@+id/line_view"
+                android:layout_width="@dimen/dp1"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_fav"
+                android:layout_alignTop="@+id/img_fav"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/img_fav"
+                android:background="#fff" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp5"
+                android:layout_toLeftOf="@+id/line_view"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:hint="Click to select location"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="@dimen/dp7"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/text_blue"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="@dimen/text_size_14" />
+        </RelativeLayout>
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_loc" />
+
+        <ImageView
+            android:id="@+id/btn_current_loc"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/rl_loc"
+            android:layout_marginRight="@dimen/dp11"
+            android:layout_marginTop="@dimen/dp11"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/map_plus_icon" />
+    </RelativeLayout>
+
+</RelativeLayout>

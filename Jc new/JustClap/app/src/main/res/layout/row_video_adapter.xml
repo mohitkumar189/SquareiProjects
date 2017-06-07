@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_background"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/images_banner"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:clickable="true"
+        android:scaleType="fitXY" />
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:background="#77555555" />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/play_video" />
+</RelativeLayout>

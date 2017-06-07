@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp15">
+
+    <TextView
+        android:id="@+id/text_submit_jobrequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/dp10"
+        android:text="Submit job Request"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_15" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/parallaxwhite"
+        android:padding="@dimen/dp20">
+
+        <TextView
+            android:id="@+id/text_ques"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="Curedmfk"
+            android:textColor="@color/textcolordark"
+            android:textSize="@dimen/text_size_14" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/text_desc"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_ques"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp10"
+            android:gravity="center"
+            android:hint="Enter skill"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/textcolordark"
+            android:textColorHint="@color/hintcolor"
+            android:textSize="@dimen/text_size_13" />
+
+        <Button
+            android:id="@+id/btn_plus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/text_desc"
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_toRightOf="@id/text_desc"
+            android:background="@drawable/floating_plus" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_skill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_next"
+            android:layout_below="@+id/text_desc"
+            android:layout_margin="@dimen/dp10" />
+
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp30"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@drawable/button_selector"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_15" />
+
+    </RelativeLayout>
+
+</LinearLayout>

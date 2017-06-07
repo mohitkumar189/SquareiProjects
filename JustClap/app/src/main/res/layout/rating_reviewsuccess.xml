@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/appbar"
+        android:paddingTop="@dimen/dp20">
+
+        <ImageView
+            android:id="@+id/image_feedback"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dp27"
+            android:src="@drawable/rating_review" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_feedback"
+            android:layout_centerInParent="true"
+            android:layout_margin="25dp"
+            android:gravity="center"
+            android:text="@string/title_feedbackdesc"
+            android:textColor="@color/txtbox_text_color_darek"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_discover"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/dp15"
+            android:background="@drawable/footer_selector"
+            android:text="Book more services"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_17"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</RelativeLayout>

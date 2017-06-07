@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_cont"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:id="@+id/header_layout"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+
+            <RelativeLayout
+                android:id="@+id/rl_main"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/top_layout"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/profile_bg"
+                    android:clickable="true"
+                    android:paddingBottom="@dimen/text_size">
+
+                    <ImageView
+                        android:id="@+id/image_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:src="@drawable/user" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:layout_toRightOf="@+id/image_user">
+
+                        <TextView
+                            android:id="@+id/text_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Logiguyz"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/text_size_sub_headre" />
+
+                        <TextView
+                            android:id="@+id/text_useremail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_below="@+id/text_username"
+                            android:layout_marginTop="@dimen/dp2"
+                            android:text="Logiguyz@gmail.com"
+                            android:textColor="@color/text_white"
+
+                            android:textSize="@dimen/text_size" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/top_layout">
+
+                    <ListView
+                        android:id="@+id/list_items"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_white"
+                        android:scrollbars="none"
+                        android:divider="#66333333"/>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </FrameLayout>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

@@ -1,0 +1,450 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/text_white">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ques_header_height"
+            android:layout_marginTop="@dimen/dp10">
+
+
+            <TextView
+                android:id="@+id/text_ques"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:padding="@dimen/dp5"
+                android:scrollbars="vertical"
+                android:text=""
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/text_size_15" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/txtbox_hint_color" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/text_addcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_top"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp20"
+            android:drawableLeft="@drawable/add"
+            android:drawablePadding="@dimen/dp10"
+            android:padding="@dimen/dp5"
+            android:text="Add City"
+            android:textColor="@color/txt_orange"
+            android:textSize="@dimen/text_size_16" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/text_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_addcity"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:gravity="left|center_vertical"
+            android:hint="City"
+            android:paddingRight="40dp"
+            android:inputType="text"
+            android:paddingLeft="@dimen/dp10"
+            android:singleLine="true"
+            android:textColor="@color/txtbox_text_color_darek"
+            android:textColorHint="@color/txtbox_hint_color"
+            android:textSize="@dimen/text_size_16" />
+
+        <Button
+            android:id="@+id/btn_plus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/text_desc"
+            android:layout_alignRight="@+id/text_desc"
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@drawable/plus" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_keywords"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_desc"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:id="@+id/ll_cross1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp11"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/btn_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grey_btn"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dp5"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/text_size_headre"
+                        android:paddingTop="@dimen/dp5"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/txtbox_text_color_darek"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <ImageView
+                        android:id="@+id/btn_cross1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/btn_1"
+                        android:layout_centerVertical="true"
+
+                        android:padding="@dimen/dp8"
+                        android:scaleType="center"
+                        android:src="@drawable/cross" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_cross2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp7"
+                    android:layout_marginTop="@dimen/dp11"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/btn_2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grey_btn"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dp5"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/text_size_headre"
+                        android:paddingTop="@dimen/dp5"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/txtbox_text_color_darek"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <ImageView
+                        android:id="@+id/btn_cross2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/btn_2"
+                        android:layout_alignRight="@+id/btn_2"
+                        android:layout_alignTop="@+id/btn_2"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/dp8"
+                        android:scaleType="center"
+                        android:src="@drawable/cross" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_cross3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp7"
+                    android:layout_marginTop="@dimen/dp11"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/btn_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grey_btn"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dp5"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/text_size_headre"
+                        android:paddingTop="@dimen/dp5"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/txtbox_text_color_darek"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <ImageView
+                        android:id="@+id/btn_cross3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/btn_3"
+                        android:layout_alignRight="@+id/btn_3"
+                        android:layout_alignTop="@+id/btn_3"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/dp8"
+                        android:scaleType="center"
+                        android:src="@drawable/cross" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp7"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:id="@+id/ll_cross4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/btn_4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grey_btn"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dp5"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/text_size_headre"
+                        android:paddingTop="@dimen/dp5"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/txtbox_text_color_darek"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <ImageView
+                        android:id="@+id/btn_cross4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/btn_4"
+                        android:layout_alignRight="@+id/btn_4"
+                        android:layout_alignTop="@+id/btn_4"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/dp8"
+                        android:scaleType="center"
+                        android:src="@drawable/cross" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_cross5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp7"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/btn_5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grey_btn"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dp5"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/text_size_headre"
+                        android:paddingTop="@dimen/dp5"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/txtbox_text_color_darek"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <ImageView
+                        android:id="@+id/btn_cross5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/btn_5"
+                        android:layout_alignRight="@+id/btn_5"
+                        android:layout_alignTop="@+id/btn_5"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/dp8"
+                        android:scaleType="center"
+                        android:src="@drawable/cross" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_cross6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp7"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/btn_6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grey_btn"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dp5"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/text_size_headre"
+                        android:paddingTop="@dimen/dp5"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/txtbox_text_color_darek"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <ImageView
+                        android:id="@+id/btn_cross6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/btn_6"
+                        android:layout_alignRight="@+id/btn_6"
+                        android:layout_alignTop="@+id/btn_6"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/dp8"
+                        android:scaleType="center"
+                        android:src="@drawable/cross" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp7"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:id="@+id/ll_cross7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/btn_7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grey_btn"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dp5"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/text_size_headre"
+                        android:paddingTop="@dimen/dp5"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/txtbox_text_color_darek"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <ImageView
+                        android:id="@+id/btn_cross7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/btn_7"
+                        android:layout_alignRight="@+id/btn_7"
+                        android:layout_alignTop="@+id/btn_7"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/dp8"
+                        android:scaleType="center"
+                        android:src="@drawable/cross" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_cross8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp7"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/btn_8"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grey_btn"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dp5"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/text_size_headre"
+                        android:paddingTop="@dimen/dp5"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/txtbox_text_color_darek"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <ImageView
+                        android:id="@+id/btn_cross8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/btn_8"
+                        android:layout_alignRight="@+id/btn_8"
+                        android:layout_alignTop="@+id/btn_8"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/dp8"
+                        android:scaleType="center"
+                        android:src="@drawable/cross" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_cross9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp7"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/btn_9"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grey_btn"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dp5"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/text_size_headre"
+                        android:paddingTop="@dimen/dp5"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/txtbox_text_color_darek"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <ImageView
+                        android:id="@+id/btn_cross9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/btn_9"
+                        android:layout_alignRight="@+id/btn_9"
+                        android:layout_alignTop="@+id/btn_9"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/dp8"
+                        android:scaleType="center"
+                        android:src="@drawable/cross" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

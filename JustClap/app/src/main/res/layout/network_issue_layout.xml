@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+
+        <ImageView
+            android:id="@+id/image_network"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_above="@+id/image_wifi"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dp20"
+            android:src="@drawable/charcter" />
+
+
+        <ImageView
+            android:id="@+id/image_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/disconnect_wifi" />
+
+
+        <TextView android:id="@+id/text_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_wifi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp10"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="@string/message_network_issue"
+            android:textColor="@color/txt_orange"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+</RelativeLayout>

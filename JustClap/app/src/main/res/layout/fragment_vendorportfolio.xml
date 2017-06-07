@@ -1,0 +1,89 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nest_scrollview1"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/rl_edit_profile"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_porfolio"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/textbox_height"
+        android:background="#444444">
+
+
+        <TextView
+            android:id="@+id/text_porfolio"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textbox_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp20"
+            android:text="Add Portfolio"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_17" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/text_profile"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dp10"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/add_white" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/text_hirenow"
+        android:layout_below="@+id/rl_porfolio"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp5"
+        android:background="@color/text_white">
+
+        <TextView
+            android:id="@+id/text_approval"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textbox_height"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:text="Add atleast two images for approval"
+            android:textColor="@color/txtbox_text_color_darek"
+            android:textSize="@dimen/text_size_17" />
+
+
+        <GridView
+            android:id="@+id/list_portfolio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/text_approval"
+            android:layout_marginTop="@dimen/dp5"
+            android:divider="@android:color/transparent"
+            android:horizontalSpacing="@dimen/dp5"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/dp5" />
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
