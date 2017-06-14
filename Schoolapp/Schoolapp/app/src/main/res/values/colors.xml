@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#015db0</color>
+    <color name="colorPrimaryDark">#07569e</color>
+    <color name="colorAccent">#3d699f</color>
+    <color name="white">#ffffff</color>
+    <color name="light_white">#b6b4b4</color>
+    <color name="black">#000000</color>
+    <color name="text_color">#939192</color>
+    <color name="text_color_light">#757575</color>
+    <color name="hint_color">#cccccc</color>
+    <color name="text_colordark">#222222</color>
+    <color name="overlay_color">#66444444</color>
+    <color name="blue_light_color">#47cac5</color>
+    <color name="greendark_color">#47ae3a</color>
+    <color name="Layout_bg_color">#f1f1f1</color>
+    <color name="red">#c73b3b</color>
+    <color name="forgot_color">#c45257</color>
+    <color name="yellow">#fedc03</color>
+    <color name="bg_color">#e7e7e7</color>
+    <color name="button_bg">#f1b310</color>
+    <color name="button_pressed">#d69f11</color>
+    <color name="view_color">#c2c2c2</color>
+    <color name="text_bg_color">#e9f6fe</color>
+    <color name="red_color">#fa0400</color>
+    <color name="green_color">#3c713f</color>
+    <color name="green">#3c713f</color>
+    <color name="yellow_color">#d28314</color>
+    <color name="blue_color">#2a7db4</color>\
+    <color name="blue_light">#379fff</color>
+</resources>

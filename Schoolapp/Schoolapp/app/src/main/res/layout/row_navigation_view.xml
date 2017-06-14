@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dp8"
+    android:paddingTop="@dimen/dp8"
+    android:id="@+id/relative1">
+
+    <ImageView
+        android:id="@+id/navIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="@dimen/dp16" />
+
+    <TextView
+        android:id="@+id/tvNavText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="72dp"
+        android:textColor="@color/black"
+        android:layout_marginRight="@dimen/dp16"
+        android:textSize="14sp" />
+</RelativeLayout>

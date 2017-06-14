@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_results"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Result" />
+        <item
+            android:id="@+id/nav_track_transport"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Track Transport" />
+        <item
+            android:id="@+id/nav_attendance"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Attendance" />
+        <item
+            android:id="@+id/nav_event_calender"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Event Calendar" />
+        <item
+            android:id="@+id/nav_payments"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Payments" />
+        <item
+            android:id="@+id/nav_time_table"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Time Table" />
+        <item
+            android:id="@+id/nav_complaint"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Complaint" />
+        <item
+            android:id="@+id/nav_connect_to_teacher"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Connect To Teacher" />
+        <item
+            android:id="@+id/nav_student_id_card"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Student Id Card" />
+        <item
+            android:id="@+id/nav_dairy"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Dairy" />
+        <item
+            android:id="@+id/nav_public_forum"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Public Forum" />
+        <item
+            android:id="@+id/nav_notes"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Notes" />
+        <item
+            android:id="@+id/nav_assignment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Assignment" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Logout" />
+
+    </group>
+
+</menu>

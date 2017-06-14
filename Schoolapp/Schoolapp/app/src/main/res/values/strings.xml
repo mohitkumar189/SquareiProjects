@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">Schoolapp</string>
+    <string name="title_activity_student_dashboard">Student Dashboard</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="message_network_problem">Please check your internet connectivity.</string>
+    <string name="message_problem">Opps! Something went wrong, please try again.</string>
+    <string name="problem_server">Problem connecting to server, Please try later.</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="title_activity_doctors">DoctorsActivity</string>
+    <string name="title_activity_doctor_detail">DoctorDetail</string>
+    <string name="book_appointment">Book Appointment</string>
+    <string name="chat">Chat</string>
+    <string name="call">Call</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign up</string>
+    <string name="title_activity_forgot_password">ForgotPassword</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="enter_email">Please enter email</string>
+    <string name="enterPassword">Please enter password</string>
+    <string name="enterconfirmPassword">Please enter password again</string>
+    <string name="enterFirstName">Please enter Name</string>
+    <string name="enterMobileno">Please enter mobile no</string>
+    <string name="mobileno_Length">Mobile no should be at least 10 digit</string>
+    <string name="title_activity_help_support">HelpSupport</string>
+    <string name="enterMessage">Please enter message</string>
+    <string name="title_activity_parent_profile">ParentProfile</string>
+    <string name="register_here"><u>Register Here</u></string>
+    <string name="title_activity_select_service_list">SelectServiceList</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_parent_dashboard">Parent Dashboard</string>
+    <string name="title_activity_student_attendance">StudentAttendance</string>
+    <string name="title_activity_student_result">StudentResult</string>
+    <string name="title_activity_complaint">ComplaintActivity</string>
+    <string name="title_activity_connect_to_teacher">ConnectToTeacher</string>
+    <string name="title_activity_eventcalendar">Eventcalendar</string>
+    <string name="title_activity_fees_payment_history">FeesPaymentHistory</string>
+    <string name="title_activity_student_id_card">Student ID Card</string>
+    <string name="title_activity_student_diary">Student Diary</string>
+    <string name="title_activity_public_forum">PublicForumActivity</string>
+    <string name="title_activity_tracktransport">Tracktransport</string>
+    <string name="title_share_note">Share Note</string>
+
+    <!-- services list -->
+    <string name="base_url">http://squarei.in/api/v3/</string>
+    <!-- <string name="base_url">http://192.168.122.18/api/v3/</string>-->
+    <string name="register">register</string>
+    <string name="loginuser">login</string>
+    <string name="forgotpassword">forgotPassword</string>
+    <string name="get_profile">profile</string>
+    <string name="prompt_user_code">4 digit pin</string>
+    <string name="verify">verify</string>
+    <string name="select_user_type">Select User Type</string>
+    <string name="user_diary">diary</string>
+    <string name="user_diary_create">diary/create</string>
+    <string name="blog">blog</string>
+    <string name="blog_answers">blog/answers</string>
+    <string name="notes">notes</string>
+    <string name="upload_post">blog/create</string>
+    <string name="upload_notes">notes/create</string>
+    <string name="title_activity_submit_dairy">Diary</string>
+    <string name="wards_list">getwards</string>
+    <string name="assignment_create">assignment/create</string>
+    <string name="assignment_list">assignment</string>
+    <string name="event_list">event</string>
+    <string name="complain_post">complain/create</string>
+    <string name="user_profile">user/profile</string>
+    <string name="title_activity_post_answer_activity">PostAnswerACtivity</string>
+    <string name="time_table">TimeTable</string>
+    <string name="action_profile">Profile</string>
+    <string name="get_teachers">connection</string>
+    <string name="create_connection">connection/create</string>
+
+</resources>
