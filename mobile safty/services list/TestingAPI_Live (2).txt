@@ -1,0 +1,342 @@
+---------------------------------------------------------------------------------------------------
+
+1.http://service.mobilesafty.com/api/Customer/CheckStreachNumber?serialNo=1000004&scratchNo=AWMi4uG6Spe1rDZ
+
+Method :get
+
+OutPut:
+{
+  "flag": 1,
+  "message": "success",
+  "result": "Matched"
+}
+
+----------------------------------------------------------------------------------------------------
+2.http://service.mobilesafty.com/api/Master/GetState
+
+Method: post
+input:
+{
+ "ActiveFlag" : "",
+ "CountryID" : "1",
+  "CountryName" : "",
+ "CreatedBy" : "",
+  "CreatedDate" : "",
+ "ModifiedBy" : "",
+  "ModifiedDate" : "",
+ "StateCode" : "",
+  "StateId" : "",
+ "StateName" : ""
+ 
+}
+
+output:
+{
+  "flag": 1,
+  "message": "Get State List",
+  "result": [
+    {
+      "StateID": 1,
+      "StateName": "Andaman & Nicobar",
+      "StateCode": null,
+      "CountryID": 0,
+      "CountryName": null,
+      "ActiveFlag": false,
+      "CreatedBy": 0,
+      "CreatedDate": "0001-01-01T00:00:00",
+      "ModifiedBy": 0,
+      "ModifiedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "StateID": 2,
+      "StateName": "Andhra Pradesh",
+      "StateCode": null,
+      "CountryID": 0,
+      "CountryName": null,
+      "ActiveFlag": false,
+      "CreatedBy": 0,
+      "CreatedDate": "0001-01-01T00:00:00",
+      "ModifiedBy": 0,
+      "ModifiedDate": "0001-01-01T00:00:00"
+ }]
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+3.http://service.mobilesafty.com/api/Master/GetDistrict
+Method: post
+input:
+{
+ "ActiveFlag" : "",
+ "CountryID" : "0",
+  "CountryName" :"20-Apr-2017",
+ "CreatedBy" : "1",
+  "CreatedDate" : "d",
+ "DistrictCode" : "d",
+  "DistrictID" : "0",
+ "DistrictName" : "d",
+  "ModifiedBy" : "1",
+ "StateName" : "fgfg",
+ "ModifiedDate":"20-Apr-2017",
+ "StateID":10,
+ "StateName":""
+}
+
+output:
+{
+ "flag": 1,
+  "message": "Get District List by StateID",
+  "result": [
+{
+      "DistrictID": 829,
+      "DistrictName": "Central Delhi",
+      "DistrictCode": null,
+      "StateID": 0,
+      "StateName": null,
+      "CountryID": 0,
+      "CountryName": null,
+      "ActiveFlag": false,
+      "CreatedBy": 0,
+      "CreatedDate": "0001-01-01T00:00:00",
+      "ModifiedBy": 0,
+      "ModifiedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "DistrictID": 822,
+      "DistrictName": "East Delhi",
+      "DistrictCode": null,
+      "StateID": 0,
+      "StateName": null,
+      "CountryID": 0,
+      "CountryName": null,
+      "ActiveFlag": false,
+      "CreatedBy": 0,
+      "CreatedDate": "0001-01-01T00:00:00",
+      "ModifiedBy": 0,
+      "ModifiedDate": "0001-01-01T00:00:00"
+ }]}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+4.http://service.mobilesafty.com/api/Master/GetCity?State=10&District=822
+Method: Get
+input:
+{
+ "ActiveFlag" : "",
+ "CountryID" : "0",
+  "CountryName" :"20-Apr-2017",
+ "CreatedBy" : "1",
+  "CreatedDate" : "d",
+ "DistrictCode" : "d",
+  "DistrictID" : "0",
+ "DistrictName" : "d",
+  "ModifiedBy" : "1",
+ "StateName" : "fgfg",
+ "ModifiedDate":"20-Apr-2017",
+ "StateID":10,
+ "StateName":""
+}
+
+output:
+{
+  "flag": 1,
+  "message": "Get City by State and District",
+  "result": [
+    {
+      "CityID": 72551,
+      "CityName": "27-Blk Trilokpuri",
+      "CityCode": null,
+      "DistrictID": 0,
+      "DistrictName": null,
+      "StateID": 0,
+      "StateName": null,
+      "CountryID": 0,
+      "CountryName": null,
+      "ActiveFlag": false,
+      "CreatedBy": 0,
+      "CreatedDate": "0001-01-01T00:00:00",
+      "ModifiedBy": 0,
+      "ModifiedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "CityID": 72550,
+      "CityName": "Anand Vihar",
+      "CityCode": null,
+      "DistrictID": 0,
+      "DistrictName": null,
+      "StateID": 0,
+      "StateName": null,
+      "CountryID": 0,
+      "CountryName": null,
+      "ActiveFlag": false,
+      "CreatedBy": 0,
+      "CreatedDate": "0001-01-01T00:00:00",
+      "ModifiedBy": 0,
+      "ModifiedDate": "0001-01-01T00:00:00"
+ }]}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5.http://service.mobilesafty.com/api/Master/GetRetailer
+Method: Get
+output:
+{
+  "flag": 1,
+  "message": "Get Retailer List",
+  "result": [
+    {
+      "UserID": 1,
+      "UserCode": "OnLine",
+      "UserName": null
+    },
+    {
+      "UserID": 3,
+      "UserCode": "retailer@mobilesafty.com",
+      "UserName": null
+    }
+]
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+6. http://service.mobilesafty.com/api/Master/GetBrand
+Method: Get
+output:
+
+  "flag": 1,
+  "message": "Get Brand List",
+  "result": [
+    {
+      "BrandID": 1,
+      "BrandName": "Apple"
+    },
+    {
+      "BrandID": 18,
+      "BrandName": "Coolpad"
+    },
+    {
+      "BrandID": 9,
+      "BrandName": "Gionee"
+    },
+    {
+      "BrandID": 7,
+      "BrandName": "HTC"
+    },
+    {
+      "BrandID": 16,
+      "BrandName": "Huawei"
+    }    }]
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7. http://service.mobilesafty.com/api/Master/GetModel
+
+Method: Get
+input :
+{
+ "ModelID":0,
+ "ModelName":"",
+  "BrandId":21,
+ "Brand":"822"
+}
+
+Output "
+{
+  "flag": 1,
+  "message": "Get Model List",
+  "result": [
+    {
+      "ModelID": 85,
+      "ModelName": "34 Star",
+      "BrandId": 21,
+      "Brand": "Lava"
+    },
+    {
+      "ModelID": 77,
+      "ModelName": "A71",
+      "BrandId": 21,
+      "Brand": "Lava"
+    },
+    {
+      "ModelID": 82,
+      "ModelName": "A88",
+      "BrandId": 21,
+      "Brand": "Lava"
+    }]}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8. http://service.mobilesafty.com/api/Customer/ApplyInsurance
+Method:Post
+input:
+{
+"Customername":"testCust1234567",
+"Dob":"20-DEC-1993",
+"Fathername":"DC",
+"Address":"L-06 laxmi nagar",
+"CountryID":"1",
+"StateID":"10",
+"DistrictID":"822",
+"CityID":"",
+"Pin":"110092",
+"Mobile":"96541236",
+"Email":"nitin1@gmail.com",
+"RetailerID":"Online",
+"CategoryId":"4",
+"BrandId":"34",
+"ModelId":"1",
+"SerialNo":"121",
+"Itemvalue":"20000",
+"InvoiceNo":"NN122",
+"DateofInvoice":"21-Dec-2014",
+"isActive":"true",
+"IMEI1":"12112121212",
+"IMEI2":"222424242424",
+"StreachNumber":"3tF5Soe0qCYOkaw",
+"StreachSerialNumber":"1000010",
+"ImgInvoiceURL":"hgh",
+"ImgProductURL1":"ghgf",
+"ImgProductURL2":"hgfh",
+"ImgBuyer":"hgff",
+"ImgIMEI":"hgfhfghf"
+}
+
+Output:
+{
+  "flag": 1,
+  "message": "success",
+  "result": "24"
+}
+
+--------------------------------------------------------------------------------
+9.http://service.mobilesafty.com/api/Customer/GetPrizeByScratchNo?scratchNo=G6Tpf1rDZPlbxKA
+
+Method:Get
+
+Output:
+{
+  "flag": 0,
+  "message": "Already Claim",
+  "result": null
+}
+
+
+--------------------------------------------------------------------------------
+10.http://service.mobilesafty.com/api/Customer/SubmitGiftDetail?ClaimCode=215955&EmailId=soft3.whiterose@gmail.com&ScratchNo=rDZPmbyKAWMi4uG
+
+Method:Get
+
+Output:
+{
+  "flag": 1,
+  "message": "Submit Gift Claim",
+  "result": [
+    {
+      "PrizeName": null,
+      "PrizeValue": null,
+      "ClaimCode": null,
+      "UserID": 0,
+      "ClaimCodeGeneratedDate": "0001-01-01T00:00:00",
+      "Mobile": "7878968523",
+      "Email": "soft3.whiterose@gmail.com"
+    }
+  ]
+}
+
+
+
+
+--------------------------------------------------------------------------------
+

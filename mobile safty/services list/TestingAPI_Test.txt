@@ -1,0 +1,676 @@
+---------------------------------------------------------------------------------------------------
+
+1.http://testservice.mobilesafty.com/api/Customer/CheckStreachNumber?serialNo=1000004&scratchNo=AWMi4uG6Spe1rDZ
+
+Method :get
+
+OutPut:
+{
+  "flag": 1,
+  "message": "success",
+  "result": "Matched"
+}
+
+----------------------------------------------------------------------------------------------------
+2.http://testservice.mobilesafty.com/api/Master/GetState
+
+Method: post
+input:
+{
+ "ActiveFlag" : "",
+ "CountryID" : "1",
+  "CountryName" : "",
+ "CreatedBy" : "",
+  "CreatedDate" : "",
+ "ModifiedBy" : "",
+  "ModifiedDate" : "",
+ "StateCode" : "",
+  "StateId" : "",
+ "StateName" : ""
+ 
+}
+
+output:
+{
+  "flag": 1,
+  "message": "Get State List",
+  "result": [
+    {
+      "StateID": 1,
+      "StateName": "Andaman & Nicobar",
+      "StateCode": null,
+      "CountryID": 0,
+      "CountryName": null,
+      "ActiveFlag": false,
+      "CreatedBy": 0,
+      "CreatedDate": "0001-01-01T00:00:00",
+      "ModifiedBy": 0,
+      "ModifiedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "StateID": 2,
+      "StateName": "Andhra Pradesh",
+      "StateCode": null,
+      "CountryID": 0,
+      "CountryName": null,
+      "ActiveFlag": false,
+      "CreatedBy": 0,
+      "CreatedDate": "0001-01-01T00:00:00",
+      "ModifiedBy": 0,
+      "ModifiedDate": "0001-01-01T00:00:00"
+ }]
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+3.http://testservice.mobilesafty.com/api/Master/GetDistrict
+Method: post
+input:
+{
+ "ActiveFlag" : "",
+ "CountryID" : "0",
+  "CountryName" :"20-Apr-2017",
+ "CreatedBy" : "1",
+  "CreatedDate" : "d",
+ "DistrictCode" : "d",
+  "DistrictID" : "0",
+ "DistrictName" : "d",
+  "ModifiedBy" : "1",
+ "StateName" : "fgfg",
+ "ModifiedDate":"20-Apr-2017",
+ "StateID":10,
+ "StateName":""
+}
+
+output:
+{
+ "flag": 1,
+  "message": "Get District List by StateID",
+  "result": [
+{
+      "DistrictID": 829,
+      "DistrictName": "Central Delhi",
+      "DistrictCode": null,
+      "StateID": 0,
+      "StateName": null,
+      "CountryID": 0,
+      "CountryName": null,
+      "ActiveFlag": false,
+      "CreatedBy": 0,
+      "CreatedDate": "0001-01-01T00:00:00",
+      "ModifiedBy": 0,
+      "ModifiedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "DistrictID": 822,
+      "DistrictName": "East Delhi",
+      "DistrictCode": null,
+      "StateID": 0,
+      "StateName": null,
+      "CountryID": 0,
+      "CountryName": null,
+      "ActiveFlag": false,
+      "CreatedBy": 0,
+      "CreatedDate": "0001-01-01T00:00:00",
+      "ModifiedBy": 0,
+      "ModifiedDate": "0001-01-01T00:00:00"
+ }]}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+4.http://testservice.mobilesafty.com/api/Master/GetCity?State=10&District=822
+Method: Get
+input:
+{
+ "ActiveFlag" : "",
+ "CountryID" : "0",
+  "CountryName" :"20-Apr-2017",
+ "CreatedBy" : "1",
+  "CreatedDate" : "d",
+ "DistrictCode" : "d",
+  "DistrictID" : "0",
+ "DistrictName" : "d",
+  "ModifiedBy" : "1",
+ "StateName" : "fgfg",
+ "ModifiedDate":"20-Apr-2017",
+ "StateID":10,
+ "StateName":""
+}
+
+output:
+{
+  "flag": 1,
+  "message": "Get City by State and District",
+  "result": [
+    {
+      "CityID": 72551,
+      "CityName": "27-Blk Trilokpuri",
+      "CityCode": null,
+      "DistrictID": 0,
+      "DistrictName": null,
+      "StateID": 0,
+      "StateName": null,
+      "CountryID": 0,
+      "CountryName": null,
+      "ActiveFlag": false,
+      "CreatedBy": 0,
+      "CreatedDate": "0001-01-01T00:00:00",
+      "ModifiedBy": 0,
+      "ModifiedDate": "0001-01-01T00:00:00"
+    },
+    {
+      "CityID": 72550,
+      "CityName": "Anand Vihar",
+      "CityCode": null,
+      "DistrictID": 0,
+      "DistrictName": null,
+      "StateID": 0,
+      "StateName": null,
+      "CountryID": 0,
+      "CountryName": null,
+      "ActiveFlag": false,
+      "CreatedBy": 0,
+      "CreatedDate": "0001-01-01T00:00:00",
+      "ModifiedBy": 0,
+      "ModifiedDate": "0001-01-01T00:00:00"
+ }]}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5.http://testservice.mobilesafty.com/api/Master/GetRetailer
+Method: Get
+output:
+{
+  "flag": 1,
+  "message": "Get Retailer List",
+  "result": [
+    {
+      "UserID": 1,
+      "UserCode": "OnLine",
+      "UserName": null
+    },
+    {
+      "UserID": 3,
+      "UserCode": "retailer@mobilesafty.com",
+      "UserName": null
+    }
+]
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+6. http://testservice.mobilesafty.com/api/Master/GetBrand
+Method: Get
+output:
+
+  "flag": 1,
+  "message": "Get Brand List",
+  "result": [
+    {
+      "BrandID": 1,
+      "BrandName": "Apple"
+    },
+    {
+      "BrandID": 18,
+      "BrandName": "Coolpad"
+    },
+    {
+      "BrandID": 9,
+      "BrandName": "Gionee"
+    },
+    {
+      "BrandID": 7,
+      "BrandName": "HTC"
+    },
+    {
+      "BrandID": 16,
+      "BrandName": "Huawei"
+    }    }]
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7. http://testservice.mobilesafty.com/api/Master/GetModel
+
+Method: Get
+input :
+{
+ "ModelID":0,
+ "ModelName":"",
+  "BrandId":21,
+ "Brand":"822"
+}
+
+Output "
+{
+  "flag": 1,
+  "message": "Get Model List",
+  "result": [
+    {
+      "ModelID": 85,
+      "ModelName": "34 Star",
+      "BrandId": 21,
+      "Brand": "Lava"
+    },
+    {
+      "ModelID": 77,
+      "ModelName": "A71",
+      "BrandId": 21,
+      "Brand": "Lava"
+    },
+    {
+      "ModelID": 82,
+      "ModelName": "A88",
+      "BrandId": 21,
+      "Brand": "Lava"
+    }]}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8. http://testservice.mobilesafty.com/api/Customer/ApplyInsurance
+Method:Post
+input:
+{
+"Customername":"testCust1234567",
+"Dob":"20-DEC-1993",
+"Fathername":"DC",
+"Address":"L-06 laxmi nagar",
+"CountryID":"1",
+"StateID":"10",
+"DistrictID":"822",
+"CityID":"",
+"Pin":"110092",
+"Mobile":"96541236",
+"Email":"nitin1@gmail.com",
+"RetailerID":"Online",
+"CategoryId":"4",
+"BrandId":"34",
+"ModelId":"1",
+"SerialNo":"121",
+"Itemvalue":"20000",
+"InvoiceNo":"NN122",
+"DateofInvoice":"21-Dec-2014",
+"isActive":"true",
+"IMEI1":"12112121212",
+"IMEI2":"222424242424",
+"StreachNumber":"3tF5Soe0qCYOkaw",
+"StreachSerialNumber":"1000010",
+"ImgInvoiceURL":"hgh",
+"ImgProductURL1":"ghgf",
+"ImgProductURL2":"hgfh",
+"ImgBuyer":"hgff",
+"ImgIMEI":"hgfhfghf"
+}
+
+Output:
+{
+  "flag": 1,
+  "message": "success",
+  "result": "24,1"
+}
+
+--------------------------------------------------------------------------------
+9.http://testservice.mobilesafty.com/api/Customer/GetPrizeByScratchNo?scratchNo=G6Tpf1rDZPlbxKA
+
+Method:Get
+
+Output:
+{
+  "flag": 0,
+  "message": "Already Claim",
+  "result": null
+}
+
+
+--------------------------------------------------------------------------------
+10.http://testservice.mobilesafty.com/api/Customer/SubmitGiftDetail?ClaimCode=215955&EmailId=soft3.whiterose@gmail.com&ScratchNo=rDZPmbyKAWMi4uG
+
+Method:Get
+
+Output:
+{
+  "flag": 1,
+  "message": "Submit Gift Claim",
+  "result": [
+    {
+      "PrizeName": null,
+      "PrizeValue": null,
+      "ClaimCode": null,
+      "UserID": 0,
+      "ClaimCodeGeneratedDate": "0001-01-01T00:00:00",
+      "Mobile": "7878968523",
+      "Email": "soft3.whiterose@gmail.com"
+    }
+  ]
+}
+--------------------------------------------------------------------------------
+
+11. http://testservice.mobilesafty.com/api/ClientAuth/AuthenticateUser
+
+method:Post
+
+input:
+{
+"UserCode":"padhiharijyotiranjan@gmail.com",
+"Password":"123456"
+}
+
+Output:
+{
+  "flag": 1,
+  "message": "Login successful.",
+  "result": [
+    {
+      "Key": null,
+      "Code": null,
+      "UserCode": "padhiharijyotiranjan@gmail.com",
+      "Password": null,
+      "UserID": 9,
+      "UserType": "Customer",
+      "Email": "padhiharijyotiranjan@gmail.com",
+      "Mobile": "7008618072",
+      "isActive": false,
+      "OldPassword": null,
+      "NewPassword": null,
+      "UserName": "JYOTI RANJAN PADHIHARI",
+      "ImageName": "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"
+    }
+  ]
+}
+----------------------------- Ist PHASE PART 2------------------------------------------------------------
+
+// Claim Part
+
+12. http://testservice.mobilesafty.com/apiInsurance/GetStreachNumber?Emailid=soft3.whiterose@gmail.com
+
+method:Get
+
+Output:
+
+{
+  "flag": 1,
+  "message": "Get StreachNo List",
+  "result": [
+    {
+      "SerialNo": "1000008",
+      "StreachNumber": "lbxJ9VLh4tG6Soe",
+      "Modelno": "",
+      "PlanID": 0,
+      "Plan": "",
+      "MobileNumber": "",
+      "IsActive": false,
+      "PolicyNo": "351700591610000506/00001",
+      "BrandName": "Apple",
+      "Model": "",
+      "InvoiceDate": "29 May 2017",
+      "ItemValue": "20000",
+      "DipercationAmount": "18000",
+      "Status": "Pending",
+      "CustomerName": "vikas jain",
+      "DipercationPercentage": ""
+    }
+  ]
+} 
+
+
+
+13. http://testservice.mobilesafty.com/api/Insurance/ViewClaim?ScratchNo=lbxJ9VLh4tG6Soe
+
+method:Get
+
+Output:
+
+{
+  "flag": 1,
+  "message": "Submit Gift Claim",
+  "result": [
+    {
+      "ImgPhotoID": "",
+      "ImgAddressProof": "",
+      "ImgCancelCheque": "",
+      "ImgScrutinySheet": "",
+      "imgBillPropsed": "",
+      "Imgfir": "",
+      "ImgDamageCopy1": "",
+      "ImgDamageCopy2": "",
+      "ImgProposedBillReceipt": "",
+      "ImgUntraceReport": "",
+      "ImgDischargeVaucher": "",
+      "ClaimID": 1,
+      "ClaimBasedOn": "Repair",
+      "isActive": true,
+      "FIRNo": "",
+      "RunningMobileNo": "",
+      "Serialno": "",
+      "Streachno": "",
+      "Dateofdamage": "2017-05-31T00:00:00",
+      "FirDate": "2007-06-01T10:19:15.7064881+05:30",
+      "CreatedBy": 0,
+      "NoofSim": 0,
+      "IMEI2": "",
+      "IMEI1": "",
+      "AccountNo": "12365472323",
+      "AccountType": "Saving",
+      "BankName": "Axis Bank",
+      "IFSC": "HDFC0001",
+      "Status": "Pending",
+      "UserID": 0
+    }
+  ]
+}
+
+-------------------------------------------------------------------------------------------------------------------
+
+// Contact List Part
+14. http://testservice.mobilesafty.com/api/Customer/GetContectList?UserID=10
+method:Get
+
+Output:
+
+{
+  "flag": 1,
+  "message": "Get Contect List",
+  "result": [
+    {
+      "id": null,
+      "MobileNumber": "677686658",
+      "Name": "Aman",
+      "UserID": "10"
+    },
+    {
+      "id": null,
+      "MobileNumber": "45465467676",
+      "Name": "Aman1",
+      "UserID": "10"
+    },
+    {
+      "id": null,
+      "MobileNumber": "4567475676",
+      "Name": "vipin",
+      "UserID": "10"
+    },
+    {
+      "id": null,
+      "MobileNumber": "5656576767",
+      "Name": "rahul",
+      "UserID": "10"
+    },
+    {
+      "id": null,
+      "MobileNumber": "677686658",
+      "Name": "Aman",
+      "UserID": "10"
+    },
+    {
+      "id": null,
+      "MobileNumber": "45465467676",
+      "Name": "Aman1",
+      "UserID": "10"
+    },
+    {
+      "id": null,
+      "MobileNumber": "4567475676",
+      "Name": "vipin",
+      "UserID": "10"
+    },
+    {
+      "id": null,
+      "MobileNumber": "5656576767",
+      "Name": "rahul",
+      "UserID": "10"
+    }
+  ]
+}
+
+
+------------------------------------------------------------------------------------------------------------
+
+// View Profile part
+
+14. http://testservice.mobilesafty.com/api/Customer/ViewProfile?EmailId=soft3.whiterose@gmail.com
+
+method:Get
+
+Output:
+
+{
+  "flag": 1,
+  "message": "success",
+  "result": [
+    {
+      "UserID": 3,
+      "StretchSerialNumber": "1000008",
+      "StretchNumber": "lbxJ9VLh4tG6Soe",
+      "PolicyNo": "351700591610000506/00001",
+      "BrandName": "Apple",
+      "Model": "iPhone 3G",
+      "InvoiceDate": "29 May 2017",
+      "ItemValue": 20000,
+      "DipericationPercentage": "10",
+      "DipericationAmount": 18000,
+      "Status": "In-Process",
+      "CustomerName": "vikas jain",
+      "Mobile": "9810489652"
+    }
+  ]
+}
+
+
+15. http://testservice.mobilesafty.com/api/Customer/ViewProfileDetail?ScratchNo=lbxJ9VLh4tG6Soe
+
+method:Get
+
+Output:
+
+{
+  "flag": 1,
+  "message": "Submit Gift Claim",
+  "result": [
+    {
+      "IMEI1": "53453453",
+      "IMEI2": "34534534535",
+      "ActionName": "",
+      "InsuranceCompany": "National Insurance",
+      "PolicyAssignDate": "29 May 2017",
+      "PolicyNo": "351700591610000506/00001",
+      "ValidUpTo": "29 May 2017 - 29 May 2018",
+      "StreachNumber": "lbxJ9VLh4tG6Soe",
+      "StreachSerialNumber": "1000008",
+      "CustomerID": 0,
+      "Customername": "vikas jain",
+      "Age": 0,
+      "Dob": "0001-01-01T00:00:00",
+      "Fathername": "DCJAIN",
+      "UserType": "",
+      "Mobile": "9810489652",
+      "Email": "soft3.whiterose@gmail.com",
+      "Country": "",
+      "State": "",
+      "City": "",
+      "District": "",
+      "CountryID": 0,
+      "StateID": 10,
+      "CityID": 0,
+      "DistrictID": 822,
+      "Address": "D-137 Vijay Chowk laxmi nagar",
+      "Pin": "110092",
+      "RetailerID": "OnLine",
+      "CategoryId": 1,
+      "BrandId": 1,
+      "ModelId": 3,
+      "Category": "",
+      "Brand": "",
+      "Model": "",
+      "SerialNo": "534534534",
+      "InvoiceNo": "215",
+      "Itemvalue": 20000,
+      "DateofInvoice": "2017-05-29T00:00:00",
+      "isActive": true,
+      "Password": "",
+      "Confirmpassword": "",
+      "Captcha": "",
+      "ImgInvoiceURL": "",
+      "ImgProductURL1": "",
+      "ImgProductURL2": "",
+      "ImgBuyer": "",
+      "ImgIMEI": ""
+    }
+  ]
+}
+
+
+16.  http://testservice.mobilesafty.com/api/Customer/EditAddressAndBank
+method:Post
+
+input:
+
+{
+"ActionName":"UpdateBankDetails",
+"UserID":"3",
+"StreachNumber":"lbxJ9VLh4tG6Soe",
+"Address":"gdfggdfgdfgdfgdfg",
+"StateID":"10",
+"DistrictID":"822",
+"CityID":"",
+"Pin":"110032",
+"AccountNumber":"12345678901234",
+"BankName":"HDFC",
+"AccountType":"Current",
+"IFSC":"HDFC0001"
+}
+
+Output:
+
+{
+  "flag": 1,
+  "message": "success",
+  "result": [{
+"Msg": "Bank Details Updated"
+}
+]
+}
+
+
+
+17.  http://testservice.mobilesafty.com/api/Customer/EditAddressAndBank
+method:Post
+
+input:
+
+{
+"ActionName":"UpdateCommunication",
+"UserID":"3",
+"StreachNumber":"lbxJ9VLh4tG6Soe",
+"Address":"gdfggdfgdfgdfgdfg",
+"StateID":"10",
+"DistrictID":"822",
+"CityID":"",
+"Pin":"110032",
+"AccountNumber":"12345678901234",
+"BankName":"HDFC",
+"AccountType":"Current",
+"IFSC":"HDFC0001"
+}
+
+Output:
+
+{
+  "flag": 1,
+  "message": "success",
+  "result": [
+    {
+      "Msg": "Communication Updated"
+    }
+  ]
+}
